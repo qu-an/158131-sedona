@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>SEDONA</title>
+	<meta charset="utf-8">
+	<title>SEDONA</title>
   </head>
   <body>
-  	<div class="all_wrapper"> <!-- чтобы сделать вокруг него тенюху по бокам, как в макете -->
+	<div class="all_wrapper"> <!-- чтобы сделать вокруг него тенюху по бокам, как в макете -->
 
-	  	<header>
+		<header>
 
-	  		<div class="top_menu"> <!-- центровщик -->
-	  			<nav class="top_menu_nav">
-	  				<ul style="list-style-type: none;">
-	  					<li><a href="#">Информация</a></li>
-	  					<li><a href="#">Фото и видео</a></li>
-	  					<li><a href="#">Карта штата</a></li>
-	  					<li><a href="#">Гостиницы</a></li>
-	  				</ul>
-	  			</nav>
+			<div class="top_menu"> <!-- центровщик -->
+				<nav class="top_menu_nav">
+					<ul style="list-style-type: none;">
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+						<li><a href="#">Карта штата</a></li>
+						<li><a href="#">Гостиницы</a></li>
+					</ul>
+				</nav>
 
-	  			<div class="top_menu_logo">
-	  				<a href="#"><img src="#" alt="logo" width="138" height="70"></a>
-	  			</div>
-	  		</div>
-	  	</header> 
+				<div class="top_menu_logo">
+					<a href="#"><img src="#" alt="logo" width="138" height="70"></a>
+				</div>
+			</div>
+		</header> 
 
 
 		<main>
 
-		  	<section class="intro">
-		  		<div class="intro_img_welcome">
-		  			<a href="#"><img src="#" width="256" height="86" alt="welcome"></a>	  				
-		  		</div>
-		  			<div class="intro_img_sedona">
-	  				<a href="#"><img src="#" width="458" height="78" alt="SEDONA"></a>
-	  			</div>
-		  			<div>
-	  				<a href="#"><img src="#" width="296" height="80" alt="Because"></a>
-	  			</div>
-	  		</section>
+			<!-- <section class="intro">
+				<div class="intro_img_welcome">
+					<a href="#"><img src="#" width="256" height="86" alt="welcome"></a>	 				
+				</div>																	 
+					<div class="intro_img_sedona">										
+					<a href="#"><img src="#" width="458" height="78" alt="SEDONA"></a>
+				</div>
+					<div>
+					<a href="#"><img src="#" width="296" height="80" alt="Because"></a>
+				</div>
+			</section> -->
+
+			<section class="intro">
+				<img src="#" width="1200" height="508" alt="sedona intro back">				
+			</section>>
 
 
-	  		<section class="content">
+			<section class="content">
 
-	  			<div class="content_title">
-		  			<h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-		  			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				<div class="content_title">
+					<h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				</div>
 				
 				<section>
@@ -61,14 +65,17 @@
 
 				<section class="features_first">
 					<div>
-						<b>Жильё</b>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					</div>
+						<img src="img/icon_house.png">
+						<b>Жильё</b>													 
+						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>   
+					</div>																
 					<div>
-						<b>Еда</b>
+						<img src="img/icon_burger.png">																  
+						<b>Еда</b>														
 						<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 					</div>
 					<div>
+						<img src="img/icon_gift.png">
 						<b>Сувениры</b>
 						<p>Не только китайского, но и местного производства!</p>
 					</div>					
@@ -110,30 +117,53 @@
 					<b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
 					<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				</div>
+
+				<div class="search_btn">
+					<button class="serach"><b>ПОИСК ГОСТИНИЦЫ В седоне</b></button>
+				</div>
 			</section>
 
 				
-			<article class="serach">
-				<div class="search_title">
-					<b>ПОИСК ГОСТИНИЦЫ В седоне</b>
-				</div>
+			<div class="serach">				
 				<div class="search_form">
 					<form>
-						<label for="arrival">Дата заезда</label>
-						<input type="text" name="arrival" id="arrival"><br>
-						<label for="departure">Дата выезда</label>
-						<input type="text" name="departure" id="departure"><br>
-						<label for="adults">Взрослые</label>                  <!-- "Дети"" и "Взрослые" делать селектом? --> 
-						<input type="" name="" id="adults">                   <!-- плюсы и минусы пока не надо? -->
-						<label for="children">Дети</label>
-						<input type="" name="" id="children"><br>
-
-						<div class="btn">
-							<input type="submit" name="search" value="Найти">
+						<div>
+							<label for="arrival">Дата заезда</label>
 						</div>
+						<div>
+							<input type="text" name="arrival" id="arrival">
+						</div>
+						<div>
+							<label for="departure">Дата выезда</label>
+						</div>
+						<div>
+							<input type="text" name="departure" id="departure">
+						</div>
+						<div>
+							<label for="adults">Взрослые</label>
+						</div>            
+						<div>
+							<div>
+								<button>-</button>
+								<input type="text" name="adults" id="adults">
+								<button>+</button>	
+							</div>
+						</div>              
+						<div>
+							<label for="children">Дети</label>
+						</div>
+						<div>
+							<div>
+								<button>-</button>
+								<input type="text" name="children" id="children">
+								<button>+</button>	
+							</div>
+						</div>
+
+						<input type="submit" name="search" value="Найти" class="social_btn">
 					</form>
 				</div>	
-			</article>
+			</div>
 
 			<div class="map">
 				<a href="#"><img src="#"></a>
@@ -150,16 +180,16 @@
 
 				<section class="footer_social">
 					<ul style="list-style-type: none;">
-          				<li><a class="social_btn social_btn_vk" href="#">Вконтакте</a></li>
-	        			<li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
-	        			<li><a class="social_btn social_btn_inst" href="#">Инстаграм</a></li>
-          			</ul>
-        		</section>
+						<li><a class="social_btn social_btn_vk" href="#">Вконтакте</a></li>
+						<li><a class="social_btn social_btn_fb" href="#">Фейсбук</a></li>
+						<li><a class="social_btn social_btn_inst" href="#">Инстаграм</a></li>
+					</ul>
+				</section>
 
-        		<section>
-        			<p>website by</p>
-        			<a href="#"><img src="#" width="113" height="39" alt="HTMLacalemy"></a>
-        		</section>
+				<section>
+					<p>website by</p>
+					<a href="#"><img src="#" width="113" height="39" alt="HTMLacalemy"></a>
+				</section>
 
 			</div>
 		</footer>
