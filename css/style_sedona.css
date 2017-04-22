@@ -1,0 +1,31 @@
+body {
+	font-family: "PT Sans";
+	/*font-stretch: condensed; */
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: black;
+}
+
+.h1_hidden {
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+}
+
+
+
+.content_claim_main {
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+}
+
+p {
+	font-family: "PT Sans";
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+	color: #7f8c8d;
+	text-transform: uppercase;
+}
