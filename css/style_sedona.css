@@ -297,59 +297,17 @@ p {
 
 /*Serchform-------------------------------------------------------*/
 
-form {
-	margin-top: 55px;
-}
-
-.search_form {
-	margin: 0 auto;
-	text-align: center;
-	vertical-align: top;
+.search {
 	width: 568px;
 	height: 395px;
-	background-color: grey;
-}
-
-.adults, 
-.children {
-	display: inline-block;
-}
-
-.search_btn {
-	margin: 54px auto 0;
-	width: 458px;
-	height: 43px;
-	padding-top: 15px;
-	background-color: #81b3d2;
-}
-
-.search_btn .claim_bold {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: white;
-}
-
-.adults_field,
-.children_field {
-	width: 114px;
-	height: 38px;
+	background-color: lightpink;
 }
 
 
-
-
-/*Footer------------------------------------------------------------*/
+/*FOOTER-----------------------------------------------------------*/
 
 .footer_wrap {
 	width: 1200px;
 	height: 120px;
-	background: lightblue;
-}
-
-.footer_visit,
-.footer_social,
-.footer_website,
-.social_btn {
-	display: inline-block;
+	background-color: lightyellow;
 }
