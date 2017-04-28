@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
   	<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
 	<meta charset="utf-8">
 	<title>SEDONA</title>
@@ -11,43 +12,46 @@
 		<header>
 				<nav class="top_menu_nav">
 					<ul style="list-style-type: none;">
-						<li><a href="#">Информация</a></li>
-						<li><a href="#">Фото и видео</a></li>
-						<li><a href="#">Карта штата</a></li>
-						<li><a href="#">Гостиницы</a></li>
+						<li class="nav_info"><a href="#">Информация</a></li>
+						<li class="nav_photo"><a href="#">Фото и видео</a></li>
+						<li class="nav_under_logo">dfsa</li>
+						<li class="nav_map"><a href="#">Карта штата</a></li>
+						<li class="nav_hotels"><a href="#">Гостиницы</a></li>
 					</ul>
 				</nav>
 
 				<div class="top_menu_logo">
-					<a href="#"><img src="#" alt="logo" width="138" height="70"></a>
+					<a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0"><img src="img/logo_sedona_triangle.png" alt="logo" width="138" height="70"></a>
 				</div>			
 		</header> 
 
 
 		<main>
 
-			<!-- <section class="intro">
-				<div class="intro_img_welcome">
-					<a href="#"><img src="#" width="256" height="86" alt="welcome"></a>	 				
-				</div>																	 
-					<div class="intro_img_sedona">										
-					<a href="#"><img src="#" width="458" height="78" alt="SEDONA"></a>
-				</div>
-					<div>
-					<a href="#"><img src="#" width="296" height="80" alt="Because"></a>
-				</div>
-			</section> -->
-
 			<section class="intro">
-				<img src="img/sedona_intro_merged.jpg" width="1200" height="508" alt="sedona intro back">		
+				<div>
+					<img src="img/sedona_intro.jpg" width="1200" height="509" alt="Горы">
+				</div>
+				<div class="frame">
+					<img src="img/frame.png" width="1200" height="57">
+				</div>
+				<div class="intro_img_welcome">
+					<a href="#"><img src="img/welcome.png" width="256" height="86" alt="welcome"></a>	
+				</div>																	 
+				<div class="intro_img_sedona">										
+					<a href="#"><img src="img/sedona.png" width="458" height="78" alt="SEDONA"></a>
+				</div>
+				<div class="intro_img_because">
+					<a href="#"><img src="img/because.png" width="296" height="80" alt="Because"></a>
+				</div>
 			</section>
 
-
+			
 			<section class="content">
 
 				<div class="content_title">
 					<h2 class="content_claim_main">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-					<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+					<div class="content_claim_five_reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
 				</div>
 				
 				<section class="claim">
@@ -63,19 +67,19 @@
 
 				<section class="features_first">
 					<div class="house">
-						<div class="blue_icon"><img src="img/icon_house.png" alt="домик"></div>
+						<div class="blue_icon"><img src="img/icon_house.png" alt="домик" width="75" height="76"></div>
 						<div class="claim_bold">Жильё</div>												 
-						<div class="claim_claim"><p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></div>   
+						<div class="claim_claim">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>   
 					</div>																
 					<div class="burger">
-						<div class="blue_icon"><img src="img/icon_burger.png" alt="бургер"></div>		  
+						<div class="blue_icon"><img src="img/icon_burger.png" alt="бургер" width="74" height="76"></div>		  
 						<div class="claim_bold">Еда</div>											
-						<div class="claim_claim"><p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p></div>
+						<div class="claim_claim">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
 					</div>
 					<div class="gift">
-						<div class="blue_icon"><img src="img/icon_gift.png" alt="сувениры"></div>
+						<div class="blue_icon"><img src="img/icon_gift.png" alt="сувениры" width="64" height="76"></div>
 						<div class="claim_bold">Сувениры</div>
-						<div class="claim_claim"><p>Не только китайского, но и местного производства!</p></div>
+						<div class="claim_claim">Не только китайского, но и местного производства!</div>
 					</div>					
 				</section>
 
