@@ -18,19 +18,7 @@ a {
 	color: black;
 }
 
-.content_claim_main {
-	font-size: 21px;
-	line-height: 26px;
-	color: black;
-}
 
-p {
-	font-family: "PT Sans";
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 26px;
-	color: #333333;
-}
 
 .all_wrapper {
 	width: 1200px;
@@ -41,60 +29,127 @@ p {
  
 /*HEADER--------------------------------------------------------------*/
 
-.top_menu_logo {
-	display: none;
+.top_menu_nav {
+	position: relative;
+	width: 1200px;
+	background: white;
+	font-size: 0px;
 }
 
-.top_menu_nav {
-	width: 1200px;
-	height: 56px;
-	background: white;
+.top_menu_logo {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
 }
 
 .top_menu_nav ul {
-	padding-top: 15px;
+	padding: 0; /*непонятно, откуда он тут взялся, чтоб его обнулять?*/
 }
 
 .top_menu_nav li {
 	display: inline-block;
-	margin-right: 70px;	
+	vertical-align: top;
+	width: 239px;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	font-size: 14px;
 	color: #000000;
 }
 
+.top_menu_nav .nav_under_logo {
+	width: 244px;
+} 
+
+.nav_under_logo {
+	display: inline-block;
+	vertical-align: top;
+	width: 244px;
+}
+
 .top_menu_nav li a {
-	text-decoration: none;
 	font-weight: bold;
 }
 
 /*INTRO--------------------------------------------------------------*/
 
-.intro {
+/*.intro {
 	font-size: 0;
 	line-height: 0;
+}*/
+
+.intro {
+	position: relative;
+	width: 1200px;
+	height: 509px;
+	background-color: lightblue;
+	/*background-image: url("img/sedona_intro.jpg"); почему бэкграундом не вставляется? пришлось в HTML через img вставлять*/
 }
+
+.intro_img_welcome {
+	position: absolute;
+	top: 76px;
+	left: 600px;
+	margin-left: -128px;
+}
+
+.intro_img_sedona {
+	position: absolute;
+	top: 214px;
+	left: 600px;
+	margin-left: -229px;
+}
+
+.intro_img_because {
+	position: absolute;
+	top: 348px;
+	left: 600px;
+	margin-left: -148px;
+}
+
+.frame {
+	position: absolute;
+	bottom: -8px; /*если сделать 0px, появляется зазор. ПОЧЕМУ?!*/
+}
+
 
 /*CONTENT------------------------------------------------------------*/
 
-/*.content {
-	background: lightblue;
-}*/
-
 .content_title {
-	height: 154px;
-	padding-top: 60px;
+	padding-top: 59px;
+	padding-bottom: 52px;
 	text-align: center;
 }
 
 .content_claim_main {
 	width: 458px;
-	margin: 0 auto 39px;
-	margin: ;
+	margin: 0 auto 27px;
 }
+
 
 /*Claim--------------------------------------------------------------*/
 
 .claim {
 	font-size: 0;
+}
+
+.content_claim {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	padding-top: 47px;
+	padding-bottom: 53px;  /*как сделать защиту от переполнения?*/
+	font-size: 14px;
+	color: white;
+	background-color: #81b3d2;
+}
+
+.content_img {
+	display: inline-block;
+	vertical-align: top;
+	width: 800px;
+	height: 256px;
 }
 
 .claim_left .claim_bold {
@@ -126,7 +181,7 @@ p {
 }
 
 .claim_left .claim_claim {
-	margin: auto;
+	margin: 0 auto ;
 	width: 285px;
 	text-align: center;
 	line-height: 21px;
@@ -139,30 +194,14 @@ p {
 	line-height: 21px;
 }
 
-.content_claim {
-	display: inline-block;
-	vertical-align: top;
-	width: 400px;
-	height: 209px;
-	padding-top: 47px;
-	font-size: 14px;
-	color: white;
-	background-color: #81b3d2;
-}
 
-.content_img {
-	display: inline-block;
-	vertical-align: top;
-	width: 800px;
-	height: 256px;
-}
 
 /*Features_1-----------------------------------------------*/
 
 .features_first {
 	width: 1200px;
-	height: 330px;
 	font-size: 0px;
+	text-align: center;
 }
 
 .house, 
@@ -171,10 +210,9 @@ p {
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
-	height: 330px;
 }
 
-.features_first .claim_bold {
+.features_first .claim_bold {  /*как сделать защиту от переполнения?*/
 	margin: auto;
 	margin-bottom: 25px;
 	width: 125px;
@@ -184,21 +222,29 @@ p {
 	line-height: 21px;
 }
 
-.features_first .claim_claim {
+.features_first .claim_claim {  /*как сделать защиту от переполнения?*/
 	margin: auto;
-	margin-bottom: 24px;
+	margin-bottom: 64px;
 	width: 300px;
-	font-size: 14px;
+	font-size: 14px; 
 	text-align: center;
 	line-height: 21px;
 }
+
+.blue_icon {
+	margin-bottom: 29px;
+	padding-top: 60px;
+}
+
 
 /*Features_2--------------------------------------------------*/
 
 .features_second {
 	width: 1200px;
-	height: 256px;
 	font-size: 0px;
+	padding-top: 47px;
+	background-color: #eeeeee; /*костыль от выпадения - так можно?*/ 
+
 }
 
 .features_second_area,
@@ -207,8 +253,6 @@ p {
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
-	height: 209px;
-	padding-top: 47px;
 	font-size: 14px;
 	background-color: #eeeeee; 
 }
@@ -225,15 +269,16 @@ p {
 
 .features_second .claim_number {
 	margin: auto;
+	margin-bottom: 24px;
 	width: 125px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
-	margin-bottom: 27px;
 }
 
 .features_second .claim_claim {
 	margin: auto;
+	margin-bottom: 56px;
 	width: 250px;
 	text-align: center;
 	font-size: 14px;
@@ -245,7 +290,6 @@ p {
 
 .search_cta {
 	width: 1200px;
-	height: 291px;
 }
 
 .search_cta_txt {
@@ -271,7 +315,7 @@ p {
 
 
 .search_hotels {
-	margin: 50px auto;
+	margin: 50px auto 0;
 	width: 568px;
 	height: 56px;
 	text-align: center;
@@ -291,6 +335,7 @@ p {
 /*MAP-------------------------------------------------------------*/
 
 .map {
+	position: relative;
 	width: 1200px;
 	height: 593px;
 }
@@ -298,16 +343,60 @@ p {
 /*Serchform-------------------------------------------------------*/
 
 .search {
+	position: absolute;
+	left: 600px;
+	top: 0;
 	width: 568px;
 	height: 395px;
-	background-color: lightpink;
+	margin: 0 -284px;
+	background-color: white;
+}
+
+.search_btn {
+	margin: 54px auto;
+	text-align: center;
+	width: 458px;
+	padding: 16px 0 16px 0;
+	background-color: #81b3d2;
+}
+
+.search_btn .claim_bold {
+	
+	font-weight: bold;
+	color: white
 }
 
 
 /*FOOTER-----------------------------------------------------------*/
 
 .footer_wrap {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
 	width: 1200px;
-	height: 120px;
-	background-color: lightyellow;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.footer_wrap .claim_bold {
+	color: black;
+	font-weight: bold;
+}
+
+.footer_visit,
+.footer_social,
+.footer_website {
+	display: inline-block;
+	vertical-align: center;
+}
+
+.social_btn {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	background-image: url(img/social_sprite.png);
+}
+
+.social_btn_tw {
+	background-position: -15px;
 }
