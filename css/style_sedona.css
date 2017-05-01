@@ -346,17 +346,57 @@ a {
 	position: absolute;
 	left: 600px;
 	top: 0;
-	margin: 0 -300px;
 	width: 568px;
 	height: 395px;
+	margin: 0 -284px;
 	background-color: white;
+}
+
+.search_btn {
+	margin: 54px auto;
+	text-align: center;
+	width: 458px;
+	padding: 16px 0 16px 0;
+	background-color: #81b3d2;
+}
+
+.search_btn .claim_bold {
+	
+	font-weight: bold;
+	color: white
 }
 
 
 /*FOOTER-----------------------------------------------------------*/
 
 .footer_wrap {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
 	width: 1200px;
-	height: 120px;
-	background-color: lightyellow;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.footer_wrap .claim_bold {
+	color: black;
+	font-weight: bold;
+}
+
+.footer_visit,
+.footer_social,
+.footer_website {
+	display: inline-block;
+	vertical-align: center;
+}
+
+.social_btn {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	background-image: url(img/social_sprite.png);
+}
+
+.social_btn_tw {
+	background-position: -15px;
 }
