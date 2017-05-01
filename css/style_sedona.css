@@ -352,50 +352,91 @@ a {
 	background-color: white;
 }
 
-.search_btn {
-	margin: 54px auto;
-	text-align: center;
-	width: 458px;
-	padding: 16px 0 16px 0;
-	background-color: #81b3d2;
+.search_form .claim_bold {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+}
+.search_btn .claim_bold {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+	color: white
 }
 
-.search_btn .claim_bold {
-	
-	font-weight: bold;
-	color: white
+.search_form {
+	width: 458px;
+	margin-top: 55px;
+	margin-left: 55px;
+}
+
+.search_btn {
+	margin: 54px 0;
+	text-align: center;
+	width: 458px;
+	padding: 15px 0 15px 0;
+	background-color: #81b3d2;
 }
 
 
 /*FOOTER-----------------------------------------------------------*/
 
+.footer_invisible {
+	position: relative;
+}
+
 .footer_wrap {
 	position: absolute;
-	text-align: center;
 	bottom: 0;
 	width: 1200px;
+	min-height: 120px;
 	background-color: rgba(255,255,255,0.9);
 }
 
-.footer_wrap .claim_bold {
+.footer_visit {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	margin-top: 50px;
+	margin-left: 130px;
+	margin-right: 130px;
 	color: black;
 	font-weight: bold;
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
 }
 
-.footer_visit,
-.footer_social,
+.footer_social {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 125px;
+	margin-right: 125px;
+	margin-top: 38px;
+}
+
 .footer_website {
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: top;
+	margin-top: 40px;
+	margin-left: 102px;
+	margin-right: 103px;
+}
+
+.footer_website .html_logo {
+	display: inline-block;
 }
 
 .social_btn {
 	display: inline-block;
+	vertical-align: bottom;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
 	background-image: url(img/social_sprite.png);
 }
+
 
 .social_btn_tw {
 	background-position: -15px;
