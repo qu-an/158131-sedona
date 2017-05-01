@@ -379,6 +379,10 @@ a {
 	background-color: #81b3d2;
 }
 
+.search_btn:hover {
+	background-color:  #669ec0;
+}
+
 
 /*FOOTER-----------------------------------------------------------*/
 
@@ -435,9 +439,7 @@ a {
 	height: 48px;
 	background-color: #81b3d2;
 	background-image: url(img/social_sprite.png);
+	background-position: 0 0;
 }
 
 
-.social_btn_tw {
-	background-position: -15px;
-}
