@@ -130,16 +130,16 @@
 
 					<div class="search">				
 						<div class="search_form">
-							<form>
-								<div class="arrival">
+							<form action="#" method="post">
+								<div class="field arrival">
 									<label for="arrival" class="claim_bold">Дата заезда </label>
-									<input type="text" name="arrival" id="arrival">
+									<div class="q"><input type="text" name="arrival" id="arrival"></div>
 								</div>
-								<div class="departure">
+								<div class="field departure">
 									<label for="departure" class="claim_bold">Дата выезда </label>
 									<input type="text" name="departure" id="departure">
 								</div>
-								<div class="adults">
+								<div class="field adults">
 									<label for="adults" class="claim_bold">Взрослые</label>
 									<div class="adults_field">
 										<button>-</button>
@@ -147,7 +147,7 @@
 										<button>+</button>	
 									</div>
 								</div>              
-								<div class="children">
+								<div class="field children">
 									<label for="children" class="claim_bold">Дети</label>
 									<div class="children_field">
 										<button>-</button>
