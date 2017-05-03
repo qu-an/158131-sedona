@@ -21,6 +21,7 @@ a {
 
 
 .all_wrapper {
+	position: relative;
 	width: 1200px;
 	height: 2762px;
 	margin: 0 auto;
@@ -30,7 +31,6 @@ a {
 /*HEADER--------------------------------------------------------------*/
 
 .top_menu_nav {
-	position: relative;
 	width: 1200px;
 	background: white;
 	font-size: 0px;
@@ -41,7 +41,7 @@ a {
 	z-index: 1;
 	top: 0;
 	left: 50%;
-	margin-left: -69px;
+	transform: translateX(-50%);
 }
 
 .top_menu_nav ul {
@@ -94,7 +94,7 @@ a {
 	width: 1200px;
 	height: 509px;
 	background-color: lightblue;
-	/*background-image: url("img/sedona_intro.jpg"); почему бэкграундом не вставляется? пришлось в HTML через img вставлять*/
+	background-image: url("../img/sedona_intro.jpg"); 
 }
 
 .intro_img_welcome {
@@ -360,6 +360,7 @@ a {
 	height: 395px;
 	margin: 0 -284px;
 	background-color: white;
+	box-shadow: 0 0 20px;
 }
 
 .search_form .claim_bold {
@@ -391,6 +392,10 @@ a {
 
 .search_btn:hover {
 	background-color:  #669ec0;
+}
+
+.search_btn:active {
+	background-color: #5496bd;
 }
 
 
@@ -431,15 +436,31 @@ a {
 }
 
 .footer_website {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 40px;
+	margin-top: 51px;
 	margin-left: 102px;
 	margin-right: 103px;
 }
 
-.footer_website .html_logo {
+.footer_website .footer_website_logo {
+	position: absolute;
+	transform: translateY(-32px);
+	left: 82px;
 	display: inline-block;
+	width: 113px;
+	height: 39px;
+	background-image: url("../img/HTML_logo_sprite.png");
+	background-position: 0 0;
+}
+
+.footer_website .footer_website_logo:hover {
+	background-position: 0 -48px;
+}
+
+.footer_website .footer_website_logo:active {
+	background-position: 0 -95px;
 }
 
 .social_btn {
@@ -447,9 +468,51 @@ a {
 	vertical-align: bottom;
 	width: 46px;
 	height: 48px;
-	background-color: #81b3d2;
-	background-image: url(img/social_sprite.png);
-	background-position: 0 0;
+	margin-right: 3px;
+	/*background-color: #81b3d2;*/
+	background-image: url("../img/social_sprite.png");
+	background-repeat: no-repeat;
 }
 
+.social_btn:last-child {
+	margin-right: 0;
+}
 
+.social_btn_tw {
+	font-size: 0;
+	background-position: 0px 0px;
+}
+
+.social_btn_tw:hover {
+	background-position: -46px 0px;
+}
+
+.social_btn_tw:active {
+	background-position: -92px 0px;
+}
+
+.social_btn_fb {
+	font-size: 0;
+	background-position: 0px -47px;
+}
+
+.social_btn_fb:hover {
+	background-position: -47px -47px;	
+}
+
+.social_btn_fb:active {
+	background-position: -92px -47px;
+}
+
+.social_btn_yt {
+	font-size: 0;
+	background-position: 0px -96px;
+}
+
+.social_btn_yt:hover {
+	background-position: -46px -96px;
+}
+
+.social_btn_yt:active {
+	background-position: -92px -96px;
+}
