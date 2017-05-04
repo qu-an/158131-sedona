@@ -8,6 +8,11 @@ body {
 	text-transform: uppercase;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -214,9 +219,7 @@ a {
 	text-align: center;
 }
 
-.house, 
-.burger,
-.gift {
+.features_first_box {
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
@@ -257,9 +260,7 @@ a {
 
 }
 
-.features_second_area,
-.features_second_road,
-.features_second_tourists {
+.features_second_box {
 	display: inline-block;
 	vertical-align: top;
 	width: 400px;
@@ -311,34 +312,28 @@ a {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
+	margin-bottom: 29px;
 }
 
 .search_cta_txt .claim_claim {
 	width: 440px;
-	margin: auto;
-	margin-top: 29px;	
+	margin: auto;	
 	font-size: 14px;
 	line-height: 24px;	
 }
 
-
-
-
-.search_hotels {
-	margin: 50px auto 0;
+.search_cta .search_hotels {
+	display: block;
 	width: 568px;
 	height: 56px;
-	text-align: center;
-	padding-top: 30px;
-	background-color: #766357;
-}
-
-.search_hotels .claim_bold {
-	margin: auto;
+	margin: 50px auto 0;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
 	color: white;
+	text-align: center;
+	padding-top: 30px;
+	background-color: #766357;
 }
 
 
@@ -353,27 +348,15 @@ a {
 /*Serchform-------------------------------------------------------*/
 
 .search {
+	font-size: 0;
 	position: absolute;
 	left: 600px;
 	top: 0;
 	width: 568px;
 	height: 395px;
-	margin: 0 -284px;
+	transform: translateX(-50%);
 	background-color: white;
 	box-shadow: 0 0 20px;
-}
-
-.search_form .claim_bold {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	color: black;
-}
-.search_btn .claim_bold {
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
-	color: white
 }
 
 .search_form {
@@ -382,12 +365,62 @@ a {
 	margin-left: 55px;
 }
 
-.search_btn {
-	margin: 54px 0;
-	text-align: center;
+.field1 label,
+.field1 div,
+.field2 label,
+.field2 div,
+.field2 {
+	display: inline-block;
+	vertical-align: center;
+	margin-bottom: 29px;
+}
+
+.field1 label {
+	min-width: 100px;
+	margin-right: 12px;
+}
+
+.field1 input {
+	width: 346px;
+	height: 38px;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.field2 label {
+	min-width: 100px;
+	margin-right: 12px;
+}
+
+.field2 input {
+	width: 114px;
+	height: 38px;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+
+
+
+
+.search_form .claim_bold {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+}
+
+.search_form .search_btn {
+	display: block;
 	width: 458px;
 	padding: 15px 0 15px 0;
+	margin: 54px 0;
+	text-align: center;
 	background-color: #81b3d2;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+	color: white;
 }
 
 .search_btn:hover {
@@ -396,17 +429,8 @@ a {
 
 .search_btn:active {
 	background-color: #5496bd;
+	color: rgba(255,255,255,0.3);
 }
-
-.field {
-	box-sizing: border-box;
-}
-
-.q {
-	display: inline-block;
-	text-align: right;
-}
-
 
 
 
