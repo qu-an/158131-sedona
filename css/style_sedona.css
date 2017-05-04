@@ -348,6 +348,7 @@ a {
 /*Serchform-------------------------------------------------------*/
 
 .search {
+	/*display: none;*/
 	font-size: 0;
 	position: absolute;
 	left: 600px;
@@ -399,6 +400,15 @@ a {
 	border: none;
 }
 
+.adults input {
+	margin-right: 53px;
+}
+
+.children label {
+	min-width: 50px;
+	margin-right: 15px;
+}
+
 
 
 
@@ -414,7 +424,7 @@ a {
 	display: block;
 	width: 458px;
 	padding: 15px 0 15px 0;
-	margin: 54px 0;
+	margin: 0 0 54px;
 	text-align: center;
 	background-color: #81b3d2;
 	font-weight: bold;
