@@ -89,15 +89,10 @@ a {
 
 /*INTRO--------------------------------------------------------------*/
 
-/*.intro {
-	font-size: 0;
-	line-height: 0;
-}*/
-
 .intro {
 	position: relative;
 	width: 1200px;
-	height: 509px;
+	height: 508px;
 	background-color: lightblue;
 	background-image: url("../img/sedona_intro.jpg"); 
 }
@@ -123,10 +118,10 @@ a {
 	margin-left: -148px;
 }
 
-.frame {
+/*.frame {
 	position: absolute;
-	bottom: -8px; /*если сделать 0px, появляется зазор. ПОЧЕМУ?!*/
-}
+	bottom: -8px; 
+}*/
 
 
 /*CONTENT------------------------------------------------------------*/
@@ -154,7 +149,7 @@ a {
 	vertical-align: top;
 	width: 400px;
 	padding-top: 47px;
-	padding-bottom: 53px;  /*как сделать защиту от переполнения?*/
+	padding-bottom: 59px;  /*как сделать защиту от переполнения?*/
 	font-size: 14px;
 	color: white;
 	background-color: #81b3d2;
@@ -180,7 +175,7 @@ a {
 .claim_right .claim_bold {
 	margin: auto;
 	margin-bottom: 24px;
-	width: 200px;
+	width: 152px;
 	font-weight: bold;
 	font-size: 21px;
 	text-align: center;
@@ -192,7 +187,7 @@ a {
 	width: 125px;
 	text-align: center;
 	line-height: 21px;
-	margin-bottom: 27px;
+	margin-bottom: 21px;
 }
 
 .claim_left .claim_claim {
@@ -237,7 +232,7 @@ a {
 
 .features_first .claim_claim {  /*как сделать защиту от переполнения?*/
 	margin: auto;
-	margin-bottom: 64px;
+	margin-bottom: 81px;
 	width: 300px;
 	font-size: 14px; 
 	text-align: center;
@@ -245,8 +240,8 @@ a {
 }
 
 .blue_icon {
-	margin-bottom: 29px;
-	padding-top: 60px;
+	margin-bottom: 15px;
+	padding-top: 57px;
 }
 
 
@@ -280,7 +275,7 @@ a {
 
 .features_second .claim_number {
 	margin: auto;
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 	width: 125px;
 	text-align: center;
 	font-size: 14px;
@@ -304,7 +299,7 @@ a {
 }
 
 .search_cta_txt {
-	padding-top: 54px;
+	padding-top: 56px;
 	text-align: center;
 }
 
@@ -367,13 +362,18 @@ a {
 }
 
 .field1 label,
-.field1 div,
+.field1 input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 29px;
+}
+
 .field2 label,
 .field2 div,
 .field2 {
 	display: inline-block;
-	vertical-align: center;
-	margin-bottom: 29px;
+	vertical-align: middle;
+	margin-bottom: 28px;
 }
 
 .field1 label {
@@ -412,6 +412,10 @@ input[name="departure"]:hover + .calendar {
 	background-position: 50% -31px;
 }
 
+input[name="arrival"]:focus + .calendar,
+input[name="departure"]:focus + .calendar {
+	background-position: 50% -69px;
+}
 
 
 
@@ -583,7 +587,7 @@ input[name="departure"]:hover + .calendar {
 	display: inline-block;
 	vertical-align: top;
 	width: 140px;
-	margin-top: 50px;
+	margin-top: 46px;
 	margin-left: 130px;
 	margin-right: 130px;
 	color: black;
@@ -600,17 +604,17 @@ input[name="departure"]:hover + .calendar {
 .footer_social {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 125px;
+	margin-left: 121px;
 	margin-right: 125px;
-	margin-top: 38px;
+	margin-top: 36px;
 }
 
 .footer_website {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 51px;
-	margin-left: 102px;
+	margin-top: 46px;
+	margin-left: 100px;
 	margin-right: 103px;
 }
 
@@ -639,7 +643,7 @@ input[name="departure"]:hover + .calendar {
 	vertical-align: bottom;
 	width: 46px;
 	height: 48px;
-	margin-right: 3px;
+	margin-right: 2px;
 	/*background-color: #81b3d2;*/
 	background-image: url("../img/social_sprite.png");
 	background-repeat: no-repeat;
