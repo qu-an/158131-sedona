@@ -347,7 +347,7 @@ a {
 
 /*Serchform-------------------------------------------------------*/
 
-.search {
+.modal_search {
 	/*display: none;*/
 	font-size: 0;
 	position: absolute;
@@ -357,7 +357,7 @@ a {
 	height: 395px;
 	transform: translateX(-50%);
 	background-color: white;
-	box-shadow: 0 0 20px;
+	box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.5), 3px 3px 15px -5px rgba(0,0,0,0.5);
 }
 
 .search_form {
@@ -382,11 +382,34 @@ a {
 }
 
 .field1 input {
+	box-sizing: border-box;
 	width: 346px;
 	height: 38px;
+	padding-right: 38px;
+	font-weight: bold;
+	text-indent: 13px;
 	background-color: #f2f2f2;
 	border: none;
 }
+
+.field1 {
+	position: relative;
+}
+
+.calendar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 38px;
+	background-image: url("../img/icon_caledar_sprite.png");
+	background-repeat: no-repeat;
+	background-position: 50% 8px; 
+	/*background-color: red;*/
+}
+
+
+
 
 .field2 label {
 	min-width: 100px;
@@ -394,11 +417,98 @@ a {
 }
 
 .field2 input {
+	box-sizing: border-box;
 	width: 114px;
 	height: 38px;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 38px;
+	padding-right: 38px;
 	background-color: #f2f2f2;
 	border: none;
 }
+
+.field1 input:hover {
+	background-color: #ebebeb;
+}
+
+
+
+.field1 input:focus {
+	outline: 0;
+    background-color: white;
+	box-shadow: inset 0 0 0 2px #f2f2f2;
+}
+
+.adults_field,
+.children_field {
+	position: relative;
+}
+
+.adults_field .btn_minus,
+.adults_field .btn_plus,
+.children_field .btn_minus,
+.children_field .btn_plus {
+	position: absolute;
+	top: 0;
+	width: 38px;
+	height: 38px;
+	font-size: 0;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.adults_field .btn_minus {
+	left: 0px;
+}
+
+.adults_field .btn_plus {
+	right: 53px;
+}
+
+.children_field .btn_minus {
+	left: 0px;
+}
+
+.children_field .btn_plus {
+	right: 0px;
+}
+
+.field2 input:focus {
+	outline: 0;
+    background-color: white;
+	box-shadow: inset 0 0 0 2px #f2f2f2;
+}
+
+.btn_minus::before {
+	position: absolute;
+	left: 13px;
+	top: 18px;
+	content: "";
+	width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+}
+
+.btn_plus::before,
+.btn_plus::after {
+	position: absolute;
+	right: 13px;
+	top: 18px;
+	content: "";
+	width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+}
+
+.btn_plus::after {
+	transform: rotate(90deg);
+}
+
+
+
+
+
 
 .adults input {
 	margin-right: 53px;
@@ -472,6 +582,10 @@ a {
 	line-height: 26px;
 }
 
+.footer_visit a:visited {
+	color: black;
+}
+
 .footer_social {
 	display: inline-block;
 	vertical-align: top;
@@ -498,6 +612,7 @@ a {
 	height: 39px;
 	background-image: url("../img/HTML_logo_sprite.png");
 	background-position: 0 0;
+	cursor: pointer;
 }
 
 .footer_website .footer_website_logo:hover {

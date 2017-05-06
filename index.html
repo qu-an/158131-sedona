@@ -126,34 +126,38 @@
 				<!-- <img src="img/map.jpg" alt="карта"> -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148171.99627591306!2d-111.90793154437308!3d34.851968603168544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1493922217364" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-					<div class="search">				
+					<div class="modal_search">				
 						<div class="search_form">
 							<form action="#" method="post">
-								<div class="field1 arrival">
+								<div class="field1">
 									<label for="arrival" class="claim_bold">Дата заезда </label>
-									<div><input type="text" name="arrival" value="24 Апреля 2017" id="arrival"></div>
+									<div>
+										<input type="text" name="arrival" value="24 АПРЕЛЯ 2017" id="arrival">
+										<div class="calendar"></div>
+									</div>
 								</div>
-								<div class="field1 departure">
+								<div class="field1">
 									<label for="departure" class="claim_bold">Дата выезда </label>
-									<div><input type="text" name="departure" value="4 июля 2017" id="departure"></div>
+									<div>
+										<input type="text" name="departure" value="4 ИЮЛЯ 2017" id="departure">
+									</div>
+									<div class="calendar"></div>						
 								</div>
 								<div class="field2 adults">
 									<label for="adults" class="claim_bold">Взрослые:</label>
-									<!-- <div class="adults_field">
-										<button>-</button>
-										<input type="text" name="adults" id="adults">
-										<button>+</button>	
-									</div> -->
-									<div><input type="text" name="adults" id="adults"></div>
+									<div class="adults_field">
+										<button type="button" class="btn_minus">-</button>
+										<input type="text" name="adults" id="adults" value="2">
+										<button type="button" class="btn_plus">+</button>	
+									</div>									
 								</div>              
 								<div class="field2 children">
 									<label for="children" class="claim_bold">Дети:</label>
-									<!-- <div class="children_field">
-										<button>-</button>
-										<input type="text" name="children" id="children">
-										<button>+</button>	
-									</div> -->
-									<div><input type="text" name="children" id="children"></div>
+									<div class="children_field">
+										<button type="button" class="btn_minus">-</button>
+										<input type="text" name="children" id="children" value="0">
+										<button type="button" class="btn_plus">+</button>	
+									</div>
 								</div>
 
 								<a href="#" class="search_btn claim_bold">найти</a>
