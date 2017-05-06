@@ -399,14 +399,19 @@ a {
 .calendar {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 0px;
 	width: 38px;
 	height: 38px;
 	background-image: url("../img/icon_caledar_sprite.png");
 	background-repeat: no-repeat;
 	background-position: 50% 8px; 
-	/*background-color: red;*/
 }
+
+input[name="arrival"]:hover + .calendar,
+input[name="departure"]:hover + .calendar {
+	background-position: 50% -31px;
+}
+
 
 
 
@@ -503,6 +508,12 @@ a {
 
 .btn_plus::after {
 	transform: rotate(90deg);
+}
+
+.btn_plus:hover::before,
+.btn_plus:hover::after,
+.btn_minus:hover::before {
+ 	background: black;
 }
 
 
