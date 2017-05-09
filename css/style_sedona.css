@@ -28,7 +28,7 @@ a {
 .all_wrapper {
 	position: relative;
 	width: 1200px;
-	height: 2762px;
+	/*height: 2762px;*/
 	margin: 0 auto;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -587,10 +587,11 @@ input[name="departure"]:focus + .calendar {
 
 
 /*FOOTER-----------------------------------------------------------*/
-
+/*
 .footer_invisible {
 	position: relative;
-}
+	
+}*/
 
 .footer_wrap {
 	position: absolute;
@@ -600,8 +601,11 @@ input[name="departure"]:focus + .calendar {
 	background-color: rgba(255,255,255,0.9);
 }
 
-.footer_inner {
+.footer_wrap_inner {
 	position: relative;
+
+	width: 1200px;
+	margin: auto;
 }
 
 .footer_visit {
@@ -759,6 +763,161 @@ input[name="departure"]:focus + .calendar {
 }
 
 
+
+
+.select_item {
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+}
+
+.select_item input[type="checkbox"] {
+	display: none;
+}
+
+.select_item input[type="checkbox"] + .checkbox_indicator {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 25px;
+	height: 22px;
+	background-image: url("../img/checkbox_sprite.png");
+	background-position: 0px 0;
+}
+
+.select_item input[type="checkbox"] + .active_checkbox {
+	background-position: 0 -52px;
+}
+
+
+/*.select_item input[type="checkbox"] + .checkbox_indicator:hover {
+	background-position: 0 -52px;
+}
+*/
+
+
+
+
+
+
+.price {
+	width: 318px;
+	margin-right: 0px;
+	margin-left: 219px;
+}
+
+.price b {
+	margin-bottom: 11px;
+}
+
+.price_control {
+	position: relative;
+	width: 314px;
+	height: 32px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+.price_control::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+	height: 22px;
+	background-color: white;
+}
+
+
+.price_control label {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 31px;
+	cursor: pointer;
+}
+
+.min_price,
+.max_price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price_control input {
+	width: 50px;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.range_control {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range_control .scale {
+	height: 2px;
+	background-color: rgba(255,255,255,0.3);
+	margin-bottom: 32px;
+}
+
+.range_control .bar {
+	width: 80%;
+	height: 2px;
+	background-color: white;
+}
+
+.range_toggle {
+	position: absolute;
+	top: -9px;
+	width: 5px;
+	height: 5px;
+	margin: 0;
+	background-color: #ababab;
+	border: 8px solid white;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0,1,1,0.14);
+	cursor: pointer;
+}
+
+.toggle_min {
+	left: 0;
+}
+
+.toggle_max {
+	left: 80%;
+}
+
+.range_toggle:hover {
+	background-color: #1c4f80;
+}
+
+.btn_show {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 30px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn_show:hover {
+	color: black;
+	background-color: white;
+}
+
 /*Sort--------------------------------------------------------*/
 
 .sort {
@@ -791,6 +950,26 @@ input[name="departure"]:focus + .calendar {
 	margin-right: 38px;
 }
 
+.sort .sort_type {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	color: rgba(0,0,0,0.3);
+}
+
+.sort .sort_type:hover {
+	color: #81b3d2;
+}
+
+.sort .sort_type:active {
+	color: black;
+}
+
+.sort .active_sort {
+	color: #81b3d2;
+	text-decoration: none; 
+}
+
+
 div.arrows {
 	display: inline-block;
 	vertical-align: middle;
@@ -819,7 +998,7 @@ div.arrows {
 	height: 11px;
 	margin: 0;
 	background-image: url("../img/arrows_down_sprite.png");
-	background-position: 0 -65px;
+	background-position: 0 0;
 }
 
 .arrows .arrow_up:hover {
@@ -835,6 +1014,10 @@ div.arrows {
 }
 
 .arrows .arrow_down:active {
+	background-position: 0 -65px;
+}
+
+.arrows .active_arrow {
 	background-position: 0 -65px;
 }
 
@@ -867,11 +1050,19 @@ div.arrows {
 	line-height: 26px;
 }
 
+.sort_content_item_discription h2:hover {
+	color: #81b3d2;
+}
+
+.sort_content_item_discription h2:active {
+	color: rgba(0,0,0,0.3);
+}
+
 .sort_content_item_discription p {
 	display: inline-block;
 	width: 100px;
 	margin-right: 17px;
-	margin-bottom: 17px;
+	margin-bottom: 16px;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -886,6 +1077,15 @@ div.arrows {
 	background-color: #81b3d2;
 }
 
+.sort_content_item_discription_more:hover {
+	background-color: #669ec0;
+}
+
+.sort_content_item_discription_more:active {
+	background-color: #5496bd;
+	color: rgba(255,255,255,0.3) 
+}
+
 .sort_content_item_discription_book {
 	padding: 6px 17px 5px;
 	font-size: 14px;
@@ -893,6 +1093,15 @@ div.arrows {
 	color: white;
 	line-height: 21px;
 	background-color: #766357;
+}
+
+.sort_content_item_discription_book:hover {
+	background-color: #604e43;
+}
+
+.sort_content_item_discription_book:active {
+	background-color: #503e33;
+	color: rgba(255,255,255,0.3) 
 }
 
 
@@ -907,8 +1116,25 @@ div.arrows {
 	display: block;
 	width: 89px;
 	height: 18px;
-	margin-left: 23px;
+	margin-left: 25px;
 	margin-bottom: 44px;
+}
+
+a.four_stars {
+	background-image: url("../img/stars_4.png"); 
+	background-repeat: no-repeat;
+}
+
+a.three_stars {
+	background-image: url("../img/stars_3.png");
+	background-repeat: no-repeat;
+	background-position: 22px 0;
+}
+
+a.two_stars {
+	background-image: url("../img/stars_2.png");
+	background-repeat: no-repeat;
+	background-position: 44px 0;
 }
 
 .sort_content_item_rate p {
