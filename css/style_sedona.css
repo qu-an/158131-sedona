@@ -15,6 +15,8 @@ body {
 
 a {
 	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 .h2_hidden {
@@ -53,6 +55,7 @@ a {
 }
 
 .top_menu_nav ul {
+	list-style-type: none;
 	padding: 0; 
 }
 
@@ -648,36 +651,52 @@ input[name="departure"]:focus + .calendar {
 	margin-top: 36px;
 }
 
+
+
 .footer_website {
-	position: relative;
 	display: inline-block;
-	vertical-align: top;
-	margin-top: 46px;
+	vertical-align: middle;
+	width: 210px;
+	height: 40px;
+	margin-top: 40px;
 	margin-left: 100px;
-	margin-right: 103px;
 }
 
-.footer_website .footer_website_logo {
-	position: absolute;
-	-webkit-transform: translateY(-32px);
-	        transform: translateY(-32px);
-	left: 82px;
+
+
+.footer_website_title {
 	display: inline-block;
 	vertical-align: top;
-	width: 113px;
-	height: 39px;
-	background: rgba(255,255,255,0.9) url("../img/HTML_logo_sprite.png") no-repeat;
-	background-position: 0 0;
-	cursor: pointer;
+	width: 74px;
+	margin-top: 6px;
+	margin-right: 4px;
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+}
+
+.footer_website_logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 114px;
+	height: 40px;
+	background: url("../img/HTML_logo_sprite.png") no-repeat;
+	background-position: 0 1px; 
 }
 
 .footer_website .footer_website_logo:hover {
-	background-position: 0 -48px;
+	background-position: 0 -47px;
 }
 
 .footer_website .footer_website_logo:active {
-	background-position: 0 -95px;
+	background-position: 0 -94px;
 }
+
+
+
+
+
+
 
 .social_btn {
 	display: inline-block;
@@ -1054,7 +1073,7 @@ div.arrows {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	font-size: 0;
-	min-height: 150px;
+	min-height: 151px;
 	padding-top: 31px;
 	border-bottom: 1px solid #ebebeb;
 }
@@ -1146,7 +1165,7 @@ div.arrows {
 	width: 89px;
 	height: 18px;
 	margin-left: 25px;
-	margin-bottom: 45px;
+	margin-bottom: 44px;
 }
 
 a.four_stars {
@@ -1168,10 +1187,13 @@ a.two_stars {
 	background-position: 44px 0;
 }
 
-.sort_content_item_rate p {
-	display: block;
-	padding: 4px 15px 3px;
+.sort_content_item_rate .rate {
+	width: 110px;
+	height: 23px;
+	padding-top: 4px;
 	font-size: 14px;
 	line-height: 21px;
-	background-color: #f2f2f2;
+	text-align: center;
+	color: black;
+	background-color:  #f2f2f2;
 }
