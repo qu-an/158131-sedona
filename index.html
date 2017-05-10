@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
   	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-  	<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
+  	<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
 	<meta charset="utf-8">
 	<title>SEDONA</title>
   </head>
@@ -15,7 +15,7 @@
 						<li class="nav_info active"><a>Информация</a></li>
 						<li class="nav_photo"><a href="#">Фото и видео</a></li>
 						<li class="nav_map"><a href="#">Карта штата</a></li>
-						<li class="nav_hotels"><a href="#">Гостиницы</a></li>
+						<li class="nav_hotels"><a href="catalog.html">Гостиницы</a></li>
 					</ul>
 				</nav>
 
@@ -28,9 +28,8 @@
 		<main>
 
 			<section class="intro">
-				<div>
-					<!-- <img src="img/sedona_intro.jpg" width="1200" height="508" alt="Горы"> -->
-				</div>
+				<h2 class="h2_hidden">Интро</h2>
+				<div></div>
 				<!-- <div class="frame">
 					<img src="img/frame.png" width="1200" height="57">
 				</div> -->
@@ -47,6 +46,7 @@
 
 			
 			<section class="content">
+				<h2 class="h2_hidden">Основное содержание</h2>
 
 				<div class="content_title">
 					<h2 class="content_claim_main">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
@@ -54,6 +54,7 @@
 				</div>
 				
 				<section class="claim">
+					<h2 class="h2_hidden">Клэйм</h2>
 					<div class="content_claim claim_left">
 						<div class="claim_bold">НАСТОЯЩИЙ ГОРОДОК</div>
 						<div class="claim_number">— №1 —</div>
@@ -65,6 +66,7 @@
 				</section>
 
 				<section class="features_first">
+					<h2 class="h2_hidden">Особенности</h2>
 					<div class="features_first_box">
 						<div class="blue_icon"><img src="img/icon_house.png" alt="домик" width="75" height="76"></div>
 						<div class="claim_bold">Жильё</div>												 
@@ -83,6 +85,7 @@
 				</section>
 
 				<section class="claim">
+					<h2 class="h2_hidden">Клэйм</h2>
 					<div class="content_img img_left">
 						<img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
 					</div>
@@ -94,6 +97,7 @@
 				</section>
 
 				<section class="features_second">
+				<h2 class="h2_hidden">Особенности</h2>
 					<div class="features_second_box">
 						<div class="claim_bold">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
 						<div class="claim_number">— №3 —</div>
@@ -113,7 +117,8 @@
 			</section>
 
 
-			<section class="search_cta">	
+			<section class="search_cta">
+				<h2 class="h2_hidden">Поиск гостиницы</h2>	
 				<div class="search_cta_txt">
 					<div class="claim_bold">ЗАИНТЕРЕСОВАЛИСЬ?</div>
 					<div class="claim_claim">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</div>
@@ -122,8 +127,7 @@
 				<a href="#" class="search_hotels claim_bold">ПОИСК ГОСТИНИЦЫ В седоне</a>	
 			</section>
 
-			<div class="map">
-				<!-- <img src="img/map.jpg" alt="карта"> -->
+			<div class="map">				
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148171.99627591306!2d-111.90793154437308!3d34.851968603168544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1493922217364" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 					<div class="modal_search">				
@@ -131,10 +135,10 @@
 							<form action="#" method="post">
 								<div class="field1 arrival">
 									<label for="arrival" class="claim_bold">Дата заезда:</label>
-									<!-- <div> -->
+									
 										<input type="text" name="arrival" value="24 АПРЕЛЯ 2017" id="arrival">
 										<div class="calendar"></div>
-									<!-- </div> -->
+									
 								</div>
 								<div class="field1 departure">
 									<label for="departure" class="claim_bold">Дата выезда: </label>
@@ -164,15 +168,7 @@
 							</form>
 						</div>	
 					</div>
-
-			
-
-
-			</div>
-				
-			
-
-				  		  		
+			</div>				  		  		
 		
 		</main>
 
@@ -180,23 +176,22 @@
 			
 				
 				<section class="footer_visit">
+					<h2 class="h2_hidden">Ссылка на Седону</h2>
 					<a href="#" class="claim_bold">#visitSEDONA</a>
 				</section>
 
 				<section class="footer_social">
+					<h2 class="h2_hidden">Ссылки на соцсети</h2>
 						<a href="https://twitter.com/" class="social_btn social_btn_tw"></a>
 						<a href="https://www.facebook.com/" class="social_btn social_btn_fb"></a>
 						<a href="https://www.youtube.com" class="social_btn social_btn_yt"></a>
 				</section>
 
 				<section class="footer_website">
+					<h2 class="h2_hidden">Ссылка на HTMLacademy</h2>
 					website by
-					<div class="footer_website_logo">
-						<!-- <a href="#"><img src="img/logo_HTML.png" width="113" height="39" alt="HTMLacalemy" class="html_logo"></a> -->
-					</div>
-				</section>
-
-			
+					<div class="footer_website_logo"></div>
+				</section>			
 		</footer>
 		
 	</div>

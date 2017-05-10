@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
+		<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
 		<meta charset="UTF-8">
 		<title>hotels catalog</title>
 	</head>
@@ -12,7 +12,7 @@
 			<header>
 				<nav class="top_menu_nav">
 					<ul style="list-style-type: none;">
-						<li class="nav_info"><a href="#">Информация</a></li>
+						<li class="nav_info"><a href="index.html">Информация</a></li>
 						<li class="nav_photo"><a href="#">Фото и видео</a></li>
 						<li class="nav_map"><a href="#">Карта штата</a></li>
 						<li class="nav_hotels active"><a>Гостиницы</a></li>
@@ -25,14 +25,16 @@
 
 
 			<main>				
-				<h1 class="h1_hidden" style="display: none;">подбор отеля</h1>
+				<h1 class="h2_hidden">подбор отеля</h1>
 				
 				<section class="filters">
+					<h2 class="h2_hidden">Фильтры параметров отеля</h2>
 					<form action="#" method="post">
-						<section class="filter_block">						
-							<b>Инфраструктура</b>							
+						<section class="filter_block">
+							<h2 class="h2_hidden">Фильтры инфраструктуры</h2>						
+							<b>Инфраструктура:</b>							
 							<div>
-								<label for="pool" class="select_item"><input type="checkbox" name="pool" id="pool"><span class="checkbox_indicator active_checkbox"></span>Бассейн</label>
+								<label for="pool" class="select_item"><input type="checkbox" name="pool" id="pool" checked><span class="checkbox_indicator"></span>Бассейн</label>
 							</div>
 							<div>
 								<label for="parking" class="select_item"><input type="checkbox" name="parking" id="parking"><span class="checkbox_indicator"></span> Парковка</label>
@@ -43,26 +45,28 @@
 						</section>	
 
 						<section class="filter_block">
-							<b>Тип жилья</b>			
+							<h2 class="h2_hidden">Фильтры типа жилья</h2>
+							<b>Тип жилья:</b>			
 							<div>
-								<label for="pool" class="select_item"><input type="checkbox" name="guesthouse" id="guesthouse"><span class="checkbox_indicator active_checkbox"></span>Гостиница</label>
+								<label for="guesthouse" class="select_item"><input type="checkbox" name="guesthouse" id="guesthouse" checked><span class="checkbox_indicator"></span>Гостиница</label>
 							</div>
 							<div>
-								<label for="parking" class="select_item"><input type="checkbox" name="hotel" id="hotel"><span class="checkbox_indicator active_checkbox"></span>Отель</label>
+								<label for="hotel" class="select_item"><input type="checkbox" name="hotel" id="hotel" checked><span class="checkbox_indicator"></span>Мотель</label>
 							</div>
 							<div>
-								<label for="wifi" class="select_item"><input type="checkbox" name="apartments" id="apartments"><span class="checkbox_indicator active_checkbox"></span>Апартаменты</label>
+								<label for="apartments" class="select_item"><input type="checkbox" name="apartments" id="apartments" checked><span class="checkbox_indicator"></span>Апартаменты</label>
 							</div>						
 						</section>
 
 						<section class="filter_block price">
+							<h2 class="h2_hidden">Фильтрация по стоимости</h2>
 							<b>Стоимость в сутки (р.)</b>
 							<div class="price_control">
-								<label class="min_price">от
-									<input type="text" name="min_price" value="0">
+								<label class="min_price" for="min_price">от
+									<input type="text" name="minprice" value="0" id="minprice">
 								</label>
-								<label class="max_price">до
-									<input type="text" name="max_price" value="3000">
+								<label class="max_price" for="maxprice">до
+									<input type="text" name="max_price" value="3000" id="maxprice">
 								</label>								
 							</div>
 							<div class="range_control">
@@ -78,6 +82,7 @@
 				</section>	
 
 				<section class="sort">
+					<h2 class="h2_hidden">Сортировка отфильтрованного</h2>
 					<b>Найдено: 3</b>
 					<p>Сортировка:</p>
 						
@@ -92,6 +97,7 @@
 				</section>
 
 				<section class="sort_content">
+					<h2 class="h2_hidden">Пункт выборки</h2>
 					<article class="sort_content_item">
 						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="amara resort"></a>						
 						<div class="sort_content_item_discription">
@@ -112,6 +118,7 @@
 					</article>
 
 					<article class="sort_content_item">
+						<h2 class="h2_hidden">Пункт выборки</h2>
 						<a href="#" class="sort_content_item_img"><img src="img/Desert_quail_inn.jpg" width="135" height="90" alt="Desert quail inn"></a>						
 						<div class="sort_content_item_discription">
 							<h2>Desert Quail Inn</h2>
@@ -130,6 +137,7 @@
 					</article>	
 
 					<article class="sort_content_item">
+						<h2 class="h2_hidden">Пункт выборки</h2>
 						<a href="#" class="sort_content_item_img"><img src="img/Villas.jpg" width="135" height="90" alt="Villas"></a>						
 						<div class="sort_content_item_discription">
 							<h2>Villas at Poco Diablo</h2>
@@ -153,20 +161,21 @@
 			<footer class="footer_wrap footer_wrap_inner">
 									
 					<section class="footer_visit">
+						<h2 class="h2_hidden">Ссылка на Седону</h2>
 						<a href="#" class="claim_bold">#visitSEDONA</a>
 					</section>
 
 					<section class="footer_social">
+						<h2 class="h2_hidden">Ссылки на соцсети</h2>
 						<a href="https://twitter.com/" class="social_btn social_btn_tw"></a>
 						<a href="https://www.facebook.com/" class="social_btn social_btn_fb"></a>
 						<a href="https://www.youtube.com" class="social_btn social_btn_yt"></a>
 					</section>
 
 					<section class="footer_website">
+						<h2 class="h2_hidden">Ссылка на HTMLacademy</h2>
 							website by
-						<div class="footer_website_logo">
-							<!-- <a href="#"><img src="img/logo_HTML.png" width="113" height="39" alt="HTMLacalemy" class="html_logo"></a> -->
-						</div>
+						<div class="footer_website_logo"></div>
 					</section>
 
 			</footer>

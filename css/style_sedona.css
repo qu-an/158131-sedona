@@ -1,5 +1,5 @@
 body {
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	/*font-stretch: condensed; */
 	font-weight: normal;
 	font-size: 14px;
@@ -9,15 +9,16 @@ body {
 }
 
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0; /*понимаю, что не очень хорошо,*/
+	padding: 0; /*но Нормалайз не помог почему-то*/
 }
 
 a {
 	text-decoration: none;
 }
 
-.h1_hidden {
+.h2_hidden {
+	display: none;
 	font-size: 21px;
 	line-height: 26px;
 	color: black;
@@ -30,7 +31,8 @@ a {
 	width: 1200px;
 	/*height: 2762px;*/
 	margin: 0 auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
  
 /*HEADER--------------------------------------------------------------*/
@@ -46,7 +48,8 @@ a {
 	z-index: 1;
 	top: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .top_menu_nav ul {
@@ -81,14 +84,16 @@ a {
 }
 
 .top_menu_nav .nav_photo {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 361px;
 	text-align: left;
 	padding-left: 73px;
 }
 
 .top_menu_nav .nav_map {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 361px;
 	text-align: right;
 	padding-right: 74px;
@@ -110,8 +115,7 @@ a {
 	position: relative;
 	width: 1200px;
 	height: 508px;
-	background-color: lightblue;
-	background-image: url("../img/sedona_intro.jpg"); 
+	background: lightblue url("../img/sedona_intro.jpg") no-repeat; 
 }
 
 .intro_img_welcome {
@@ -237,7 +241,7 @@ a {
 	width: 400px;
 }
 
-.features_first .claim_bold {  /*как сделать защиту от переполнения?*/
+.features_first .claim_bold {  
 	margin: auto;
 	margin-bottom: 25px;
 	width: 125px;
@@ -247,7 +251,7 @@ a {
 	line-height: 21px;
 }
 
-.features_first .claim_claim {  /*как сделать защиту от переполнения?*/
+.features_first .claim_claim {  
 	margin: auto;
 	margin-bottom: 81px;
 	width: 300px;
@@ -355,7 +359,9 @@ a {
 	position: relative;
 	width: 1200px;
 	height: 593px;
+	background-color: #cbe6a3;
 }
+
 
 /*Serchform-------------------------------------------------------*/
 
@@ -367,9 +373,11 @@ a {
 	top: 0;
 	width: 568px;
 	height: 395px;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	background-color: white;
-	box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.5), 3px 3px 15px -5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.5), 3px 3px 15px -5px rgba(0,0,0,0.5);
+	        box-shadow: -3px 3px 15px -5px rgba(0,0,0,0.5), 3px 3px 15px -5px rgba(0,0,0,0.5);
 }
 
 .search_form {
@@ -399,7 +407,8 @@ a {
 }
 
 .field1 input {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 346px;
 	height: 38px;
 	padding-right: 38px;
@@ -419,19 +428,20 @@ a {
 	right: 0px;
 	width: 38px;
 	height: 38px;
-	background-image: url("../img/icon_caledar_sprite.png");
-	background-repeat: no-repeat;
+	background: #f2f2f2 url("../img/icon_caledar_sprite.png") no-repeat;
 	background-position: 50% 8px; 
 }
 
 input[name="arrival"]:hover + .calendar,
 input[name="departure"]:hover + .calendar {
 	background-position: 50% -31px;
+	background-color: #ebebeb;
 }
 
 input[name="arrival"]:focus + .calendar,
 input[name="departure"]:focus + .calendar {
 	background-position: 50% -69px;
+	background-color: transparent;
 }
 
 
@@ -443,7 +453,8 @@ input[name="departure"]:focus + .calendar {
 }
 
 .field2 input {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 114px;
 	height: 38px;
 	font-weight: bold;
@@ -463,7 +474,8 @@ input[name="departure"]:focus + .calendar {
 .field1 input:focus {
 	outline: 0;
     background-color: white;
-	box-shadow: inset 0 0 0 2px #f2f2f2;
+	-webkit-box-shadow: inset 0 0 0 2px #f2f2f2;
+	        box-shadow: inset 0 0 0 2px #f2f2f2;
 }
 
 .adults_field,
@@ -503,7 +515,8 @@ input[name="departure"]:focus + .calendar {
 .field2 input:focus {
 	outline: 0;
     background-color: white;
-	box-shadow: inset 0 0 0 2px #f2f2f2;
+	-webkit-box-shadow: inset 0 0 0 2px #f2f2f2;
+	        box-shadow: inset 0 0 0 2px #f2f2f2;
 }
 
 .btn_minus::before {
@@ -528,7 +541,8 @@ input[name="departure"]:focus + .calendar {
 }
 
 .btn_plus::after {
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .btn_plus:hover::before,
@@ -645,12 +659,14 @@ input[name="departure"]:focus + .calendar {
 
 .footer_website .footer_website_logo {
 	position: absolute;
-	transform: translateY(-32px);
+	-webkit-transform: translateY(-32px);
+	        transform: translateY(-32px);
 	left: 82px;
 	display: inline-block;
+	vertical-align: top;
 	width: 113px;
 	height: 39px;
-	background-image: url("../img/HTML_logo_sprite.png");
+	background: rgba(255,255,255,0.9) url("../img/HTML_logo_sprite.png") no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 }
@@ -669,8 +685,7 @@ input[name="departure"]:focus + .calendar {
 	width: 46px;
 	height: 48px;
 	margin-right: 2px;
-	/*background-color: #81b3d2;*/
-	background-image: url("../img/social_sprite.png");
+	background: #81b3d2 url("../img/social_sprite.png") no-repeat;
 	background-repeat: no-repeat;
 }
 
@@ -725,13 +740,13 @@ input[name="departure"]:focus + .calendar {
 /*Filters------------------------------------------------------*/
 
 .filters {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	min-height: 217px;
 	padding-left: 73px;
 	padding-right: 72px;
 	padding-top: 27px;
-	background-image: url("../img/back.jpg");
-	background-repeat: no-repeat;
+	background: #99a2aa url("../img/back.jpg") no-repeat;
 	color: white;
 }
 
@@ -739,7 +754,7 @@ input[name="departure"]:focus + .calendar {
 	display: inline-block;
 	vertical-align: top;
 	min-width: 145px;
-	margin-right: 110px; 
+	margin-right: 105px; 
 }
 
 .filter_block b {
@@ -767,12 +782,12 @@ input[name="departure"]:focus + .calendar {
 
 .select_item {
 	position: relative;
-	padding-left: 35px;
+	padding-left: 41px;
 	cursor: pointer;
 }
 
 .select_item input[type="checkbox"] {
-	display: none;
+	display: none; /*знаю, что плохо, прочту - сделаю хорошо*/
 }
 
 .select_item input[type="checkbox"] + .checkbox_indicator {
@@ -781,19 +796,19 @@ input[name="departure"]:focus + .calendar {
 	left: 0;
 	width: 25px;
 	height: 22px;
-	background-image: url("../img/checkbox_sprite.png");
+	background: url("../img/checkbox_sprite.png") no-repeat;
 	background-position: 0px 0;
 }
 
-.select_item input[type="checkbox"] + .active_checkbox {
+.select_item input[type="checkbox"]:checked + .checkbox_indicator {
 	background-position: 0 -52px;
 }
 
-
-/*.select_item input[type="checkbox"] + .checkbox_indicator:hover {
-	background-position: 0 -52px;
+.select_item input[type="checkbox"]:disabled + .checkbox_indicator {
+	background-position: 0 -79px;
 }
-*/
+
+
 
 
 
@@ -803,7 +818,8 @@ input[name="departure"]:focus + .calendar {
 .price {
 	width: 318px;
 	margin-right: 0px;
-	margin-left: 219px;
+	margin-left: 229px;
+
 }
 
 .price b {
@@ -825,7 +841,8 @@ input[name="departure"]:focus + .calendar {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 2px;
 	height: 22px;
 	background-color: white;
@@ -839,10 +856,14 @@ input[name="departure"]:focus + .calendar {
 	cursor: pointer;
 }
 
-.min_price,
-.max_price {
+.min_price {
 	width: 90px;
 	padding-left: 65px;
+}
+
+.max_price {
+	width: 90px;
+	padding-left: 58px;
 }
 
 .price_control input {
@@ -874,14 +895,15 @@ input[name="departure"]:focus + .calendar {
 
 .range_toggle {
 	position: absolute;
-	top: -9px;
+	top: -10px;
 	width: 5px;
 	height: 5px;
 	margin: 0;
 	background-color: #ababab;
 	border: 8px solid white;
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 rgba(0,1,1,0.14);
+	-webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,0.14);
+	        box-shadow: 0 2px 1px 0 rgba(0,1,1,0.14);
 	cursor: pointer;
 }
 
@@ -897,7 +919,7 @@ input[name="departure"]:focus + .calendar {
 	background-color: #1c4f80;
 }
 
-.btn_show {
+.btn_show {         /*в макете она НЕ четко по центру*/
 	display: block;
 	margin: 0 auto;
 	padding: 6px 30px;
@@ -921,7 +943,8 @@ input[name="departure"]:focus + .calendar {
 /*Sort--------------------------------------------------------*/
 
 .sort {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	min-height: 86px;
 	padding-top: 28px;
 	padding-left: 73px;
@@ -952,7 +975,8 @@ input[name="departure"]:focus + .calendar {
 
 .sort .sort_type {
 	text-decoration: underline;
-	text-decoration-style: dotted;
+	-webkit-text-decoration-style: dotted;
+	        text-decoration-style: dotted;
 	color: rgba(0,0,0,0.3);
 }
 
@@ -981,6 +1005,7 @@ div.arrows {
 
 .arrows a {
 	display: inline-block;
+	vertical-align: middle;
 	line-height: 5px;
 	font-size: 0;
 }
@@ -989,6 +1014,7 @@ div.arrows {
 	width: 10px;
 	height: 11px;
 	margin-right: 12px;
+	/*background-color: #cccccc;*/
 	background-image: url("../img/arrows_up_sprite.png");
 	background-position: 0 0;
 } 
@@ -997,6 +1023,7 @@ div.arrows {
 	width: 10px;
 	height: 11px;
 	margin: 0;
+	/*background-color: #cccccc;*/
 	background-image: url("../img/arrows_down_sprite.png");
 	background-position: 0 0;
 }
@@ -1024,7 +1051,8 @@ div.arrows {
 /*Sort content-------------------------------------------------*/
 
 .sort_content_item {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-size: 0;
 	min-height: 150px;
 	padding-top: 31px;
@@ -1060,6 +1088,7 @@ div.arrows {
 
 .sort_content_item_discription p {
 	display: inline-block;
+	vertical-align: middle;
 	width: 100px;
 	margin-right: 17px;
 	margin-bottom: 16px;
@@ -1069,7 +1098,7 @@ div.arrows {
 
 .sort_content_item_discription_more {
 	margin-right: 6px;
-	padding: 6px 17px 5px;
+	padding: 5px 17px 5px;
 	font-size: 14px;
 	font-weight: bold;
 	color: white;
@@ -1087,7 +1116,7 @@ div.arrows {
 }
 
 .sort_content_item_discription_book {
-	padding: 6px 17px 5px;
+	padding: 5px 17px 5px;
 	font-size: 14px;
 	font-weight: bold;
 	color: white;
@@ -1109,7 +1138,7 @@ div.arrows {
 	display: inline-block;
 	vertical-align: top;
 	height: 91px;
-	margin-left: 522px;
+	margin-left: 520px;
 }
 
 .sort_content_item_rate a {
@@ -1117,21 +1146,23 @@ div.arrows {
 	width: 89px;
 	height: 18px;
 	margin-left: 25px;
-	margin-bottom: 44px;
+	margin-bottom: 45px;
 }
 
 a.four_stars {
+	/*background-color: #81b3d2;*/
 	background-image: url("../img/stars_4.png"); 
-	background-repeat: no-repeat;
 }
 
 a.three_stars {
+	/*background-color: #81b3d2;*/
 	background-image: url("../img/stars_3.png");
 	background-repeat: no-repeat;
 	background-position: 22px 0;
 }
 
 a.two_stars {
+	/*background-color: #81b3d2;*/
 	background-image: url("../img/stars_2.png");
 	background-repeat: no-repeat;
 	background-position: 44px 0;
@@ -1139,18 +1170,8 @@ a.two_stars {
 
 .sort_content_item_rate p {
 	display: block;
-	padding: 5px 17px 3px;
+	padding: 4px 15px 3px;
 	font-size: 14px;
 	line-height: 21px;
 	background-color: #f2f2f2;
 }
-
-
-
-
-
-
-
-
-
-
