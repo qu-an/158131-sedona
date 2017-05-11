@@ -365,6 +365,11 @@ a {
 	background-color: #cbe6a3;
 }
 
+.map iframe {
+	width: 1200px;
+	height: 593px;
+	/*frameborder="0"*/
+}
 
 /*Serchform-------------------------------------------------------*/
 
