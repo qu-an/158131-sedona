@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
   	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-  	<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
 	<meta charset="utf-8">
 	<title>SEDONA</title>
   </head>
@@ -90,7 +90,7 @@
 						<img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
 					</div>
 					<div class="content_claim claim_right">
-						<div class="claim_bold">ТАМ ЕСТЬ Мост дьявола</div>
+						<div class="claim_bold">ТАМ ЕСТЬ<br>Мост дьявола</div>
 						<div class="claim_number">— №2 —</div>
 						<div class="claim_claim">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
 					</div>				
@@ -127,74 +127,67 @@
 				<a href="#" class="search_hotels claim_bold">ПОИСК ГОСТИНИЦЫ В седоне</a>	
 			</section>
 
-			<div class="map">				
+			<div class="map">
+							
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148171.99627591306!2d-111.90793154437308!3d34.851968603168544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1493922217364" width="1200" height="593"></iframe>
 
-					<div class="modal_search">				
-						<div class="search_form">
-							<form action="#" method="post">
-								<div class="field1 arrival">
-									<label for="arrival" class="claim_bold">Дата заезда:</label>
-									
-										<input type="text" name="arrival" value="24 АПРЕЛЯ 2017" id="arrival">
-										<div class="calendar"></div>
-									
+				<div class="modal_search">				
+					<div class="search_form">
+						<form action="#" method="post">
+							<div class="field1 arrival">
+								<label for="arrival" class="claim_bold">Дата заезда:</label>
+								<input type="text" name="arrival" value="24 АПРЕЛЯ 2017" id="arrival">
+								<button class="calendar"></button>								
+							</div>
+							<div class="field1 departure">
+								<label for="departure" class="claim_bold">Дата выезда: </label>
+								<input type="text" name="departure" value="4 ИЮЛЯ 2017" id="departure">
+								<button class="calendar"></button>
+							</div>
+							<div class="field2 adults">
+								<label for="adults" class="claim_bold">Взрослые:</label>
+								<div class="adults_field">
+									<button type="button" class="btn_minus">-</button>
+									<input type="text" name="adults" id="adults" value="2">
+									<button type="button" class="btn_plus">+</button>	
+								</div>									
+							</div>              
+							<div class="field2 children">
+								<label for="children" class="claim_bold">Дети:</label>
+								<div class="children_field">
+									<button type="button" class="btn_minus">-</button>
+									<input type="text" name="children" id="children" value="0">
+									<button type="button" class="btn_plus">+</button>	
 								</div>
-								<div class="field1 departure">
-									<label for="departure" class="claim_bold">Дата выезда: </label>
-									
-										<input type="text" name="departure" value="4 ИЮЛЯ 2017" id="departure">
-									
-									<div class="calendar"></div>						
-								</div>
-								<div class="field2 adults">
-									<label for="adults" class="claim_bold">Взрослые:</label>
-									<div class="adults_field">
-										<button type="button" class="btn_minus">-</button>
-										<input type="text" name="adults" id="adults" value="2">
-										<button type="button" class="btn_plus">+</button>	
-									</div>									
-								</div>              
-								<div class="field2 children">
-									<label for="children" class="claim_bold">Дети:</label>
-									<div class="children_field">
-										<button type="button" class="btn_minus">-</button>
-										<input type="text" name="children" id="children" value="0">
-										<button type="button" class="btn_plus">+</button>	
-									</div>
-								</div>
-
-								<a href="catalog.html" class="search_btn claim_bold">найти</a>
-							</form>
-						</div>	
-					</div>
+							</div>
+							<a href="catalog.html" class="search_btn claim_bold">найти</a>
+						</form>
+					</div>	
+				</div>
 			</div>				  		  		
 		
 		</main>
 
-		<footer class="footer_wrap">
-			
+		<footer class="footer_wrap">				
+			<section class="footer_visit">
+				<h2 class="h2_hidden">Ссылка на Седону</h2>
+				<a href="#" class="claim_bold">#visitSEDONA</a>
+			</section>
+
+			<section class="footer_social">
+				<h2 class="h2_hidden">Ссылки на соцсети</h2>
+					<a href="https://twitter.com/" class="social_btn social_btn_tw"></a>
+					<a href="https://www.facebook.com/" class="social_btn social_btn_fb"></a>
+					<a href="https://www.youtube.com" class="social_btn social_btn_yt"></a>
+			</section>
+
+			<section class="footer_website">
+				<h2 class="h2_hidden">Ссылка на HTMLacademy</h2>
 				
-				<section class="footer_visit">
-					<h2 class="h2_hidden">Ссылка на Седону</h2>
-					<a href="#" class="claim_bold">#visitSEDONA</a>
-				</section>
-
-				<section class="footer_social">
-					<h2 class="h2_hidden">Ссылки на соцсети</h2>
-						<a href="https://twitter.com/" class="social_btn social_btn_tw"></a>
-						<a href="https://www.facebook.com/" class="social_btn social_btn_fb"></a>
-						<a href="https://www.youtube.com" class="social_btn social_btn_yt"></a>
-				</section>
-
-				<section class="footer_website">
-					<h2 class="h2_hidden">Ссылка на HTMLacademy</h2>
-					
-						<div class="footer_website_title">
-							website by
-						</div>
-						<div class="footer_website_logo"></div>
-					
+					<div class="footer_website_title">
+						website by
+					</div>
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo"></div></a>		
 				</section>			
 		</footer>
 		

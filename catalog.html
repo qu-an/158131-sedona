@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
+		<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
 		<meta charset="UTF-8">
 		<title>hotels catalog</title>
 	</head>
@@ -23,13 +23,12 @@
 				</div>			
 			</header> 
 
-
 			<main>				
 				<h1 class="h2_hidden">подбор отеля</h1>
 				
 				<section class="filters">
 					<h2 class="h2_hidden">Фильтры параметров отеля</h2>
-					<form action="#" method="post">
+					<form action="#" method="get">
 						<section class="filter_block">
 							<h2 class="h2_hidden">Фильтры инфраструктуры</h2>						
 							<b>Инфраструктура:</b>							
@@ -55,7 +54,7 @@
 							</div>
 							<div>
 								<label for="apartments" class="select_item"><input type="checkbox" name="apartments" id="apartments" checked><span class="checkbox_indicator"></span>Апартаменты</label>
-							</div>						
+							</div>	
 						</section>
 
 						<section class="filter_block price">
@@ -74,7 +73,7 @@
 									<div class="bar"></div>
 								</div>	
 								<div class="range_toggle toggle_min"></div>
-								<div class="range_toggle toggle_max"></div>													
+								<div class="range_toggle toggle_max"></div>								
 							</div>
 							<button type="submit" class="btn_show">Показать</button>		
 						</section>
@@ -101,9 +100,11 @@
 					<article class="sort_content_item">
 						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="amara resort"></a>						
 						<div class="sort_content_item_discription">
-							<a href="#"><h2>Amara Resort & Spa</h2></a>
-							<p>Гостиница</p>
-							<p>от 4000 р.</p>
+							<a href="#"><h2>Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa </h2></a>
+							<div class="sort_content_item_discription_small">
+								<p>Гостиница</p>
+								<p>от 4000 р.</p>
+							</div>	
 									
 							<div class="sort_content_item_btn">
 								<a href="#" class="sort_content_item_discription_more">подробнее</a>
@@ -158,8 +159,7 @@
 					</section>		
 			</main>
 
-			<footer class="footer_wrap footer_wrap_inner">
-									
+			<footer class="footer_wrap footer_wrap_inner">									
 					<section class="footer_visit">
 						<h2 class="h2_hidden">Ссылка на Седону</h2>
 						<a href="#" class="claim_bold">#visitSEDONA</a>
@@ -178,7 +178,7 @@
 						<div class="footer_website_title">
 							website by
 						</div>
-						<div class="footer_website_logo"></div>
+						<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo"></div></a>
 					
 				</section>
 			</footer>

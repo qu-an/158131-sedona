@@ -26,15 +26,13 @@ a {
 	color: black;
 }
 
-
-
 .all_wrapper {
 	position: relative;
 	width: 1200px;
 	/*height: 2762px;*/
 	margin: 0 auto;
-	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
  
 /*HEADER--------------------------------------------------------------*/
@@ -42,7 +40,7 @@ a {
 .top_menu_nav {
 	width: 1200px;
 	background: white;
-	font-size: 0px;
+	font-size: 0;
 }
 
 .top_menu_logo {
@@ -60,6 +58,7 @@ a {
 }
 
 .top_menu_nav li {
+	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
 	width: 239px;
@@ -67,6 +66,10 @@ a {
 	padding: 15px 0 15px 0;
 	font-size: 14px;
 	color: #000000;
+}
+
+.top_menu_nav li:last-child {
+	padding: 15px 0 15px 13px;
 }
 
 .top_menu_nav a:visited {
@@ -108,7 +111,7 @@ a {
 	width: 244px;
 }
 
-.top_menu_nav li a {
+.top_menu_nav a {
 	font-weight: bold;
 }
 
@@ -147,7 +150,6 @@ a {
 	bottom: -8px; 
 }*/
 
-
 /*CONTENT------------------------------------------------------------*/
 
 .content_title {
@@ -160,7 +162,6 @@ a {
 	width: 458px;
 	margin: 0 auto 27px;
 }
-
 
 /*Claim--------------------------------------------------------------*/
 
@@ -199,7 +200,7 @@ a {
 .claim_right .claim_bold {
 	margin: auto;
 	margin-bottom: 24px;
-	width: 152px;
+	width: 154px;
 	font-weight: bold;
 	font-size: 21px;
 	text-align: center;
@@ -223,18 +224,16 @@ a {
 
 .claim_right .claim_claim {
 	margin: auto;
-	width: 230px;
+	width: 306px;
 	text-align: center;
 	line-height: 21px;
 }
-
-
 
 /*Features_1-----------------------------------------------*/
 
 .features_first {
 	width: 1200px;
-	font-size: 0px;
+	font-size: 0;
 	text-align: center;
 }
 
@@ -268,12 +267,11 @@ a {
 	padding-top: 57px;
 }
 
-
 /*Features_2--------------------------------------------------*/
 
 .features_second {
 	width: 1200px;
-	font-size: 0px;
+	font-size: 0;
 	padding-top: 47px;
 	background-color: #eeeeee; /*костыль от выпадения - так можно?*/ 
 
@@ -309,12 +307,11 @@ a {
 .features_second .claim_claim {
 	margin: auto;
 	margin-bottom: 56px;
-	width: 250px;
+	width: 267px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
 } 
-
 
 /*Search--------------------------------------------------------*/
 
@@ -355,14 +352,14 @@ a {
 	background-color: #766357;
 }
 
-
 /*MAP-------------------------------------------------------------*/
 
 .map {
 	position: relative;
 	width: 1200px;
 	height: 593px;
-	background-color: #cbe6a3;
+	background-image: url("../img/Screenshot_1.png");
+	background-position: 50% 70%;
 }
 
 .map iframe {
@@ -415,7 +412,7 @@ a {
 .field1 input {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	width: 346px;
+	width: 344px;
 	height: 38px;
 	padding-right: 38px;
 	font-weight: bold;
@@ -431,9 +428,11 @@ a {
 .calendar {
 	position: absolute;
 	top: 0;
-	right: 0px;
+	right: 0;
 	width: 38px;
 	height: 38px;
+	border: none;
+	outline: none;
 	background: #f2f2f2 url("../img/icon_caledar_sprite.png") no-repeat;
 	background-position: 50% 8px; 
 }
@@ -449,9 +448,6 @@ input[name="departure"]:focus + .calendar {
 	background-position: 50% -69px;
 	background-color: transparent;
 }
-
-
-
 
 .field2 label {
 	min-width: 100px;
@@ -474,8 +470,6 @@ input[name="departure"]:focus + .calendar {
 .field1 input:hover {
 	background-color: #ebebeb;
 }
-
-
 
 .field1 input:focus {
 	outline: 0;
@@ -503,7 +497,7 @@ input[name="departure"]:focus + .calendar {
 }
 
 .adults_field .btn_minus {
-	left: 0px;
+	left: 0;
 }
 
 .adults_field .btn_plus {
@@ -511,11 +505,11 @@ input[name="departure"]:focus + .calendar {
 }
 
 .children_field .btn_minus {
-	left: 0px;
+	left: 0;
 }
 
 .children_field .btn_plus {
-	right: 0px;
+	right: 0;
 }
 
 .field2 input:focus {
@@ -557,9 +551,11 @@ input[name="departure"]:focus + .calendar {
  	background: black;
 }
 
-
-
-
+.btn_plus:active::before,
+.btn_plus:active::after,
+.btn_minus:active::before {
+ 	background: #81b3d2;
+}
 
 
 .adults input {
@@ -570,10 +566,6 @@ input[name="departure"]:focus + .calendar {
 	min-width: 50px;
 	margin-right: 15px;
 }
-
-
-
-
 
 .search_form .claim_bold {
 	font-size: 14px;
@@ -604,13 +596,11 @@ input[name="departure"]:focus + .calendar {
 	color: rgba(255,255,255,0.3);
 }
 
-
-
 /*FOOTER-----------------------------------------------------------*/
 /*
+
 .footer_invisible {
 	position: relative;
-	
 }*/
 
 .footer_wrap {
@@ -695,12 +685,6 @@ input[name="departure"]:focus + .calendar {
 	background-position: 0 -94px;
 }
 
-
-
-
-
-
-
 .social_btn {
 	display: inline-block;
 	vertical-align: bottom;
@@ -717,20 +701,20 @@ input[name="departure"]:focus + .calendar {
 
 .social_btn_tw {
 	font-size: 0;
-	background-position: 0px 0px;
+	background-position: 0 0;
 }
 
 .social_btn_tw:hover {
-	background-position: -46px 0px;
+	background-position: -46px 0;
 }
 
 .social_btn_tw:active {
-	background-position: -92px 0px;
+	background-position: -92px 0;
 }
 
 .social_btn_fb {
 	font-size: 0;
-	background-position: 0px -47px;
+	background-position: 0 -47px;
 }
 
 .social_btn_fb:hover {
@@ -743,7 +727,7 @@ input[name="departure"]:focus + .calendar {
 
 .social_btn_yt {
 	font-size: 0;
-	background-position: 0px -96px;
+	background-position: 0 -96px;
 }
 
 .social_btn_yt:hover {
@@ -754,10 +738,7 @@ input[name="departure"]:focus + .calendar {
 	background-position: -92px -96px;
 }
 
-
-
 /*CATALOG-----------------------------------------------------*/
-
 
 /*Filters------------------------------------------------------*/
 
@@ -768,7 +749,11 @@ input[name="departure"]:focus + .calendar {
 	padding-left: 73px;
 	padding-right: 72px;
 	padding-top: 27px;
-	background: #99a2aa url("../img/back.jpg") no-repeat;
+	background-color: #99a2aa;
+	background-image: url("../img/back_a.jpg");
+	background-repeat: repeat;
+	background-position: 0 -300px;
+	/*background-attachment: fixed;*/
 	color: white;
 }
 
@@ -796,11 +781,8 @@ input[name="departure"]:focus + .calendar {
 }
 
 .filter_block div:last-child {
-	margin-bottom: 0;
+	margin-bottom: 20px;
 }
-
-
-
 
 .select_item {
 	position: relative;
@@ -819,7 +801,7 @@ input[name="departure"]:focus + .calendar {
 	width: 25px;
 	height: 22px;
 	background: url("../img/checkbox_sprite.png") no-repeat;
-	background-position: 0px 0;
+	background-position: 0 0;
 }
 
 .select_item input[type="checkbox"]:checked + .checkbox_indicator {
@@ -830,18 +812,10 @@ input[name="departure"]:focus + .calendar {
 	background-position: 0 -79px;
 }
 
-
-
-
-
-
-
-
 .price {
 	width: 318px;
-	margin-right: 0px;
-	margin-left: 229px;
-
+	margin-right: 0;
+	margin-left: 228px;
 }
 
 .price b {
@@ -850,7 +824,7 @@ input[name="departure"]:focus + .calendar {
 
 .price_control {
 	position: relative;
-	width: 314px;
+	width: 313px;
 	height: 32px;
 	margin-bottom: 20px;
 	font-size: 0;
@@ -870,32 +844,32 @@ input[name="departure"]:focus + .calendar {
 	background-color: white;
 }
 
-
 .price_control label {
 	display: inline-block;
-	vertical-align: top;
-	line-height: 31px;
+	vertical-align: bottom;
+	line-height: 21px;
 	cursor: pointer;
 }
 
 .min_price {
-	width: 90px;
+	width: 85px;
 	padding-left: 65px;
 }
 
 .max_price {
-	width: 90px;
+	width: 85px;
 	padding-left: 58px;
 }
 
 .price_control input {
 	width: 50px;
+	height: 21px;
 	margin: 0;
 	font: inherit;
 	color: inherit;
 	background: none;
 	border: none;
-	outline: none;
+	/*outline: none;*/
 }
 
 .range_control {
@@ -906,7 +880,7 @@ input[name="departure"]:focus + .calendar {
 .range_control .scale {
 	height: 2px;
 	background-color: rgba(255,255,255,0.3);
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .range_control .bar {
@@ -943,8 +917,8 @@ input[name="departure"]:focus + .calendar {
 
 .btn_show {         /*в макете она НЕ четко по центру*/
 	display: block;
-	margin: 0 auto;
-	padding: 6px 30px;
+	margin-left: 85px;
+	padding: 6px 31px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -984,9 +958,11 @@ input[name="departure"]:focus + .calendar {
 
 .sort p,
 .sort a {
+	box-sizing: border-box;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	margin-right: 28px;
+	margin-top: 7px;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -995,11 +971,19 @@ input[name="departure"]:focus + .calendar {
 	margin-right: 38px;
 }
 
-.sort .sort_type {
+/*.sort .sort_type {
 	text-decoration: underline;
 	-webkit-text-decoration-style: dotted;
 	        text-decoration-style: dotted;
 	color: rgba(0,0,0,0.3);
+}*/
+
+.sort a {
+	border-bottom: 1px dotted #81b3d2;
+}
+
+a.active_sort {
+	border: none;
 }
 
 .sort .sort_type:hover {
@@ -1015,7 +999,6 @@ input[name="departure"]:focus + .calendar {
 	text-decoration: none; 
 }
 
-
 div.arrows {
 	display: inline-block;
 	vertical-align: middle;
@@ -1027,12 +1010,13 @@ div.arrows {
 
 .arrows a {
 	display: inline-block;
-	vertical-align: middle;
 	line-height: 5px;
 	font-size: 0;
+	border: none;
 }
 
 .arrows .arrow_up {
+	vertical-align: top;
 	width: 10px;
 	height: 11px;
 	margin-right: 12px;
@@ -1042,9 +1026,11 @@ div.arrows {
 } 
 
 .arrows .arrow_down {
+	vertical-align: top;
 	width: 10px;
 	height: 11px;
 	margin: 0;
+	margin-top: 4px;
 	/*background-color: #cccccc;*/
 	background-image: url("../img/arrows_down_sprite.png");
 	background-position: 0 0;
@@ -1091,6 +1077,7 @@ div.arrows {
 .sort_content_item_discription {
 	display: inline-block;
 	vertical-align: top;
+	min-width: 300px;
 }
 
 .sort_content_item_discription h2 {
@@ -1155,12 +1142,11 @@ div.arrows {
 	color: rgba(255,255,255,0.3) 
 }
 
-
 .sort_content_item_rate {
 	display: inline-block;
 	vertical-align: top;
 	height: 91px;
-	margin-left: 520px;
+	margin-left: 480px;
 }
 
 .sort_content_item_rate a {
