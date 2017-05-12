@@ -19,13 +19,6 @@ a {
 	cursor: pointer;
 }
 
-.h2_hidden {
-	display: none;
-	font-size: 21px;
-	line-height: 26px;
-	color: black;
-}
-
 .all_wrapper {
 	position: relative;
 	width: 1200px;
@@ -33,6 +26,17 @@ a {
 	margin: 0 auto;
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.visually_hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
  
 /*HEADER--------------------------------------------------------------*/
@@ -494,6 +498,7 @@ input[name="departure"]:focus + .calendar {
 	font-size: 0;
 	border: none;
 	background-color: #f2f2f2;
+	outline: none;
 }
 
 .adults_field .btn_minus {
@@ -556,7 +561,6 @@ input[name="departure"]:focus + .calendar {
 .btn_minus:active::before {
  	background: #81b3d2;
 }
-
 
 .adults input {
 	margin-right: 53px;
@@ -644,8 +648,6 @@ input[name="departure"]:focus + .calendar {
 	margin-top: 36px;
 }
 
-
-
 .footer_website {
 	display: inline-block;
 	vertical-align: middle;
@@ -654,8 +656,6 @@ input[name="departure"]:focus + .calendar {
 	margin-top: 40px;
 	margin-left: 100px;
 }
-
-
 
 .footer_website_title {
 	display: inline-block;
@@ -749,11 +749,12 @@ input[name="departure"]:focus + .calendar {
 	padding-left: 73px;
 	padding-right: 72px;
 	padding-top: 27px;
+	padding-bottom: 5px; 
 	background-color: #99a2aa;
 	background-image: url("../img/back_a.jpg");
 	background-repeat: repeat;
 	background-position: 0 -300px;
-	/*background-attachment: fixed;*/
+	background-size: cover;
 	color: white;
 }
 
@@ -781,7 +782,7 @@ input[name="departure"]:focus + .calendar {
 }
 
 .filter_block div:last-child {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .select_item {
@@ -791,7 +792,14 @@ input[name="departure"]:focus + .calendar {
 }
 
 .select_item input[type="checkbox"] {
-	display: none; /*знаю, что плохо, прочту - сделаю хорошо*/
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .select_item input[type="checkbox"] + .checkbox_indicator {
@@ -869,7 +877,7 @@ input[name="departure"]:focus + .calendar {
 	color: inherit;
 	background: none;
 	border: none;
-	/*outline: none;*/
+	outline: none;
 }
 
 .range_control {
@@ -1067,17 +1075,18 @@ div.arrows {
 	border-bottom: 1px solid #ebebeb;
 }
 
-.sort_content_item_img {
+.sort_content_item_img img {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 72px;
 	margin-right: 30px;
+	background-color: #5c3234; 
 }
 
 .sort_content_item_discription {
 	display: inline-block;
 	vertical-align: top;
-	min-width: 300px;
+	width: 500px;
 }
 
 .sort_content_item_discription h2 {
@@ -1146,7 +1155,7 @@ div.arrows {
 	display: inline-block;
 	vertical-align: top;
 	height: 91px;
-	margin-left: 480px;
+	margin-left: 280px;
 }
 
 .sort_content_item_rate a {

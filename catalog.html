@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
+		<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
 		<meta charset="UTF-8">
 		<title>hotels catalog</title>
 	</head>
@@ -12,59 +12,59 @@
 			<header>
 				<nav class="top_menu_nav">
 					<ul>
-						<li class="nav_info"><a href="index.html">Информация</a></li>
-						<li class="nav_photo"><a href="#">Фото и видео</a></li>
-						<li class="nav_map"><a href="#">Карта штата</a></li>
-						<li class="nav_hotels active"><a>Гостиницы</a></li>
+						<li class="nav_info"><a href="index.html" aria-label="Информация">Информация</a></li>
+						<li class="nav_photo"><a href="#" aria-label="Фото и видео">Фото и видео</a></li>
+						<li class="nav_map"><a href="#" aria-label="Карта штата">Карта штата</a></li>
+						<li class="nav_hotels active"><a aria-label="Гостиницы">Гостиницы</a></li>
 					</ul>
 				</nav>
 				<div class="top_menu_logo">
-					<a href="index.html"><img src="img/logo_sedona_triangle.png" alt="logo" width="138" height="70"></a>
+					<a href="index.html"><img src="img/logo_sedona_triangle.png" alt="лого Седоны" width="138" height="70"></a>
 				</div>			
 			</header> 
 
 			<main>				
-				<h1 class="h2_hidden">подбор отеля</h1>
+				<h1 class="visually_hidden">подбор отеля</h1>
 				
 				<section class="filters">
-					<h2 class="h2_hidden">Фильтры параметров отеля</h2>
+					<h2 class="visually_hidden">Фильтры параметров отеля</h2>
 					<form action="#" method="get">
 						<section class="filter_block">
-							<h2 class="h2_hidden">Фильтры инфраструктуры</h2>						
+							<h2 class="visually_hidden">Фильтры инфраструктуры</h2>						
 							<b>Инфраструктура:</b>							
 							<div>
-								<label for="pool" class="select_item"><input type="checkbox" name="pool" id="pool" checked><span class="checkbox_indicator"></span>Бассейн</label>
+								<label for="pool" class="select_item" aria-label="Бассейн"><input type="checkbox" name="pool" id="pool" checked><span class="checkbox_indicator"></span>Бассейн</label>
 							</div>
 							<div>
-								<label for="parking" class="select_item"><input type="checkbox" name="parking" id="parking"><span class="checkbox_indicator"></span> Парковка</label>
+								<label for="parking" class="select_item" aria-label="Парковка"><input type="checkbox" name="parking" id="parking"><span class="checkbox_indicator"></span>Парковка</label>
 							</div>
 							<div>
-								<label for="wifi" class="select_item"><input type="checkbox" name="wifi" id="wifi"><span class="checkbox_indicator"></span>Wi-Fi</label>
+								<label for="wifi" class="select_item" aria-label="Wi-Fi"><input type="checkbox" name="wifi" id="wifi"><span class="checkbox_indicator"></span>Wi-Fi</label>
 							</div>						
 						</section>	
 
 						<section class="filter_block">
-							<h2 class="h2_hidden">Фильтры типа жилья</h2>
+							<h2 class="visually_hidden">Фильтры типа жилья</h2>
 							<b>Тип жилья:</b>			
 							<div>
-								<label for="guesthouse" class="select_item"><input type="checkbox" name="guesthouse" id="guesthouse" checked><span class="checkbox_indicator"></span>Гостиница</label>
+								<label for="guesthouse" class="select_item" aria-label="Гостиница"><input type="checkbox" name="guesthouse" id="guesthouse" checked><span class="checkbox_indicator"></span>Гостиница</label>
 							</div>
 							<div>
-								<label for="hotel" class="select_item"><input type="checkbox" name="hotel" id="hotel" checked><span class="checkbox_indicator"></span>Мотель</label>
+								<label for="hotel" class="select_item" aria-label="Мотель"><input type="checkbox" name="hotel" id="hotel" checked><span class="checkbox_indicator"></span>Мотель</label>
 							</div>
 							<div>
-								<label for="apartments" class="select_item"><input type="checkbox" name="apartments" id="apartments" checked><span class="checkbox_indicator"></span>Апартаменты</label>
-							</div>	
+								<label for="apartments" class="select_item" aria-label="Апартаменты"><input type="checkbox" name="apartments" id="apartments" checked><span class="checkbox_indicator"></span>Апартаменты</label>
+							</div>
 						</section>
 
 						<section class="filter_block price">
-							<h2 class="h2_hidden">Фильтрация по стоимости</h2>
+							<h2 class="visually_hidden">Фильтрация по стоимости</h2>
 							<b>Стоимость в сутки (р.)</b>
 							<div class="price_control">
-								<label for="minprice" class="min_price">от
+								<label for="minprice" class="min_price" aria-label="Ввести нижний предел цены">от
 									<input type="text" name="minprice" value="0" id="minprice">
 								</label>
-								<label for="maxprice" class="max_price">до
+								<label for="maxprice" class="max_price" aria-label="Ввести верхний предел цены">до
 									<input type="text" name="max_price" value="3000" id="maxprice">
 								</label>								
 							</div>
@@ -72,16 +72,16 @@
 								<div class="scale">
 									<div class="bar"></div>
 								</div>	
-								<div class="range_toggle toggle_min"></div>
-								<div class="range_toggle toggle_max"></div>								
+								<div class="range_toggle toggle_min" aria-label="Ползунок нижнего предела цены"></div>
+								<div class="range_toggle toggle_max" aria-label="Ползунок верхнего  предела цены"></div>								
 							</div>
-							<button type="submit" class="btn_show">Показать</button>		
+							<button type="submit" class="btn_show" aria-label="Кнопка показать результаты сортировки по цене">Показать</button>		
 						</section>
 					</form>
 				</section>	
 
 				<section class="sort">
-					<h2 class="h2_hidden">Сортировка отфильтрованного</h2>
+					<h2 class="visually_hidden">Сортировка отфильтрованного</h2>
 					<b>Найдено: 3</b>
 					<p>Сортировка:</p>
 						
@@ -96,11 +96,11 @@
 				</section>
 
 				<section class="sort_content">
-					<h2 class="h2_hidden">Пункт выборки</h2>
+					<h2 class="visually_hidden">Пункт выборки</h2>
 					<article class="sort_content_item">
-						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="amara resort"></a>						
+						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="фото отеля Амара"></a>						
 						<div class="sort_content_item_discription">
-							<a href="#"><h2>Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa Amara Resort & Spa </h2></a>
+							<a href="#"><h2>Amara Resort & Spa</h2></a>
 							<div class="sort_content_item_discription_small">
 								<p>Гостиница</p>
 								<p>от 4000 р.</p>
@@ -119,8 +119,8 @@
 					</article>
 
 					<article class="sort_content_item">
-						<h2 class="h2_hidden">Пункт выборки</h2>
-						<a href="#" class="sort_content_item_img"><img src="img/Desert_quail_inn.jpg" width="135" height="90" alt="Desert quail inn"></a>						
+						<h2 class="visually_hidden">Пункт выборки</h2>
+						<a href="#" class="sort_content_item_img"><img src="img/Desert_quail_inn.jpg" width="135" height="90" alt="фото отеля Десерт Квэйл"></a>						
 						<div class="sort_content_item_discription">
 							<a href="#"><h2>Desert Quail Inn</h2></a>
 							<p>Мотель</p>
@@ -138,8 +138,8 @@
 					</article>	
 
 					<article class="sort_content_item">
-						<h2 class="h2_hidden">Пункт выборки</h2>
-						<a href="#" class="sort_content_item_img"><img src="img/Villas.jpg" width="135" height="90" alt="Villas"></a>						
+						<h2 class="visually_hidden">Пункт выборки</h2>
+						<a href="#" class="sort_content_item_img"><img src="img/Villas.jpg" width="135" height="90" alt="фото отеля Виллас"></a>						
 						<div class="sort_content_item_discription">
 							<a href="#"><h2>Villas at Poco Diablo</h2></a>
 							<p>Апартаменты</p>
@@ -160,26 +160,24 @@
 			</main>
 
 			<footer class="footer_wrap footer_wrap_inner">									
-					<section class="footer_visit">
-						<h2 class="h2_hidden">Ссылка на Седону</h2>
-						<a href="#" class="claim_bold">#visitSEDONA</a>
-					</section>
+				<section class="footer_visit">
+					<h2 class="visually_hidden">Ссылка на Седону</h2>
+					<a href="#" class="claim_bold" aria-label="Ссылка на Седону">#visitSEDONA</a>
+				</section>
 
-					<section class="footer_social">
-						<h2 class="h2_hidden">Ссылки на соцсети</h2>
-						<a href="https://twitter.com/" class="social_btn social_btn_tw"></a>
-						<a href="https://www.facebook.com/" class="social_btn social_btn_fb"></a>
-						<a href="https://www.youtube.com" class="social_btn social_btn_yt"></a>
-					</section>
+				<section class="footer_social">
+					<h2 class="visually_hidden">Ссылки на соцсети</h2>
+					<a href="https://twitter.com/" class="social_btn social_btn_tw" aria-label="Седона в Твиттере"></a>
+					<a href="https://www.facebook.com/" class="social_btn social_btn_fb" aria-label="Седона в Фейсбуке"></a>
+					<a href="https://www.youtube.com" class="social_btn social_btn_yt" aria-label="Седона в Ютубе"></a>
+				</section>
 
 				<section class="footer_website">
-					<h2 class="h2_hidden">Ссылка на HTMLacademy</h2>
-					
+					<h2 class="visually_hidden">Ссылка на HTMLacademy</h2>					
 						<div class="footer_website_title">
 							website by
 						</div>
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo"></div></a>
-					
+						<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo" aria-label="Логотип-ссылка на Академию"></div></a>		
 				</section>
 			</footer>
 				
