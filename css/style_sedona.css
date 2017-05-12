@@ -438,7 +438,8 @@ a {
 	border: none;
 	outline: none;
 	background: #f2f2f2 url("../img/icon_caledar_sprite.png") no-repeat;
-	background-position: 50% 8px; 
+	background-position: 50% 8px;
+	cursor: pointer; 
 }
 
 input[name="arrival"]:hover + .calendar,
@@ -532,6 +533,10 @@ input[name="departure"]:focus + .calendar {
 	width: 12px;
 	height: 3px;
 	background: #a9a9a9;
+}
+
+.modal_search button {
+	cursor: pointer;
 }
 
 .btn_plus::before,
