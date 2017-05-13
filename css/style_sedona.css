@@ -483,6 +483,14 @@ input[name="departure"]:focus + .calendar {
 	        box-shadow: inset 0 0 0 2px #f2f2f2;
 }
 
+.modal_search .calendar:hover {
+	background-position: 50% -31px;
+}
+
+.modal_search .calendar:active {
+	background-position: 50% -69px;
+}
+
 .adults_field,
 .children_field {
 	position: relative;
