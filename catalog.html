@@ -3,7 +3,7 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style_sedona.css">
+		<link rel="stylesheet" type="text/css" href="css/style_sedona_min.css">
 		<meta charset="UTF-8">
 		<title>hotels catalog</title>
 	</head>
@@ -25,8 +25,7 @@
 			</header> 
 
 			<main>				
-				<h1 class="visually_hidden">подбор отеля</h1>
-				
+				<h1 class="visually_hidden">подбор отеля</h1>				
 				<section class="filters">
 					<h2 class="visually_hidden">Фильтры параметров отеля</h2>
 					<form action="somehotels" method="get">
@@ -62,11 +61,9 @@
 							<h2 class="visually_hidden">Фильтрация по стоимости</h2>
 							<b>Стоимость в сутки (р.)</b>
 							<div class="price_control">
-								<label for="minprice" class="min_price" aria-label="Ввести нижний предел цены">от
-									<input type="text" name="minprice" value="0" id="minprice">
+								<label for="minprice" class="min_price" aria-label="Ввести нижний предел цены">от <input type="text" name="minprice" value="0" id="minprice">
 								</label>
-								<label for="maxprice" class="max_price" aria-label="Ввести верхний предел цены">до
-									<input type="text" name="max_price" value="3000" id="maxprice">
+								<label for="maxprice" class="max_price" aria-label="Ввести верхний предел цены">до <input type="text" name="max_price" value="3000" id="maxprice">
 								</label>								
 							</div>
 							<div class="range_control">
@@ -97,16 +94,14 @@
 				</section>
 
 				<section class="sort_content">
-					<h2 class="visually_hidden">Пункт выборки</h2>
 					<article class="sort_content_item">
-						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="фото отеля Амара"></a>						
+						<h2 class="visually_hidden">Пункт выборки</h2>
+						<a href="#" class="sort_content_item_img"><img src="img/amara.jpg" width="135" height="90" alt="фото отеля Амара"></a>		
 						<div class="sort_content_item_discription">
 							<a href="#"><h2>Amara Resort & Spa</h2></a>
-							<div class="sort_content_item_discription_small">
-								<p>Гостиница</p>
-								<p>от 4000 р.</p>
-							</div>	
-									
+							<p>Гостиница</p>
+							<p>от 4000 р.</p>
+																
 							<div class="sort_content_item_btn">
 								<a href="#" class="sort_content_item_discription_more">подробнее</a>
 								<a href="#" class="sort_content_item_discription_book">забронировать</a>
@@ -132,6 +127,7 @@
 								<a href="#" class="sort_content_item_discription_book">забронировать</a>
 							</div>									
 						</div>
+
 						<div class="sort_content_item_rate">
 							<a href="#" class="three_stars"></a>
 							<div class="rate">рейтинг: 8,9</div>
@@ -157,7 +153,7 @@
 							<div class="rate">рейтинг: 9,2</div>
 						</div>
 					</article>						
-					</section>		
+				</section>		
 			</main>
 
 			<footer class="footer_wrap footer_wrap_inner">									
@@ -175,10 +171,10 @@
 
 				<section class="footer_website">
 					<h2 class="visually_hidden">Ссылка на HTMLacademy</h2>					
-						<div class="footer_website_title">
-							website by
-						</div>
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo" aria-label="Логотип-ссылка на Академию"></div></a>		
+					<div class="footer_website_title">
+						website by
+					</div>
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><div class="footer_website_logo" aria-label="Логотип-ссылка на Академию"></div></a>		
 				</section>
 			</footer>
 				
