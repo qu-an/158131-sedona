@@ -393,6 +393,10 @@ a {
 	margin-left: 55px;
 }
 
+.input_wrap {
+	display: inline-block;
+}
+
 .field1 label,
 .field1 input {
 	display: inline-block;
@@ -487,7 +491,7 @@ input[name="departure"]:focus + .calendar {
 	background-position: 50% -31px;
 }
 
-.modal_search .calendar:active {
+.modal_search .calendar:focus {
 	background-position: 50% -69px;
 }
 
