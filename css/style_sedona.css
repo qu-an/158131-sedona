@@ -620,11 +620,6 @@ input[name="departure"]:focus + .calendar {
 }
 
 /*FOOTER-----------------------------------------------------------*/
-/*
-
-.footer_invisible {
-	position: relative;
-}*/
 
 .footer_wrap {
 	position: absolute;
