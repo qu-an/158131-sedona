@@ -415,8 +415,8 @@ a {
 }
 
 .field1 label {
-	width: 100px;
-	margin-right: 12px;
+	width: 112px;
+	/*margin-right: 12px;*/
 }
 
 .field1 input {
