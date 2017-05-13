@@ -415,7 +415,7 @@ a {
 }
 
 .field1 label {
-	min-width: 100px;
+	width: 100px;
 	margin-right: 12px;
 }
 
